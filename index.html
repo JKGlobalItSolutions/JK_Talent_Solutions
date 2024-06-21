@@ -65,36 +65,38 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav style="height: 80%;" class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img style="height: 100px;" src="./assets/images/Logo JK Talent Solutions.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#top">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Our Services</a>
-              </li>                          
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="one-page.html">One Page</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="itopenings.html">IT Openings</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="index.html">
+                <img class="navbar-logo" src="./assets/images/Logo JK Talent Solutions.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#top">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="one-page.html">One Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="itopenings.html">IT Openings</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     </header>
 
     <!-- Page Content -->
@@ -123,7 +125,6 @@ https://templatemo.com/tm-545-finance-business
                   <!-- <h6>we are here to support you</h6> -->
                   <h4>Employee Engagement Activities</h4>
                   <p>At JK Talent Solutions, we believe that engaged employees are the key to a thriving workplace.  We offer a variety of activities designed to boost morale, foster teamwork, and promote a positive work environment. From team-building events and wellness programs to professional development workshops and social gatherings, our initiatives are tailored to meet the diverse needs of our team. Join us and experience a workplace and your growth is encouraged.</p>
-                  
                 </div>
             </div>
           </div>
@@ -388,42 +389,31 @@ https://templatemo.com/tm-545-finance-business
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Recruitment</h2>
-              
             </div>
           </div>
           <div class="col-md-12">
-            <div class="owl-testimonials owl-carousel">
-              
+            <div class="">
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>PERMANENT STAFFING</h4>
                   <br>
-               <p>Organizations keep looking at hiring good leaders as part of their growth strategy. The challenge is to get appropriate alignment of leader's aspirations with the directions of the organization.</p>
+                  <p>Organizations keep looking at hiring good leaders as part of their growth strategy. The challenge is to get appropriate alignment of leader's aspirations with the directions of the organization.</p>
                 </div>
-                
               </div>
-              
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>CONTRACT STAFFING</h4>
                   <br>
-               <p>We bring you the innovative staffing solutions which are agile enough to meet the rapidly changing talent needs of today's world of work. </p>
-               
-               
+                  <p>We bring you the innovative staffing solutions which are agile enough to meet the rapidly changing talent needs of today's world of work.</p>
                 </div>
-                
               </div>
-                
-              </div>
-              
-              
-           
-              
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+
 
     <div class="callback-form">
       <div class="container">
@@ -436,7 +426,7 @@ https://templatemo.com/tm-545-finance-business
           </div>
           <div class="col-md-12">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+              <form id="myform" action="" method="">
                 <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
@@ -450,7 +440,7 @@ https://templatemo.com/tm-545-finance-business
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                      <input name="mobile" type="text" class="form-control" id="mobile_number" placeholder="mobile no" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
@@ -474,7 +464,63 @@ https://templatemo.com/tm-545-finance-business
       <br>
     </div>
 
-   
+   <!-- email js jk talent solutions start -->
+   <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+      sendMessage(); // Call the sendMessage function
+      // sendemail(); 
+      // Call the sendemail function
+    });
+  
+    function sendMessage() {
+      var phonenumber = "+8438438413"; // Your WhatsApp phone number
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var mobile_number = document.getElementById("mobile_number").value;
+      var message = document.getElementById("message").value;
+     
+  
+      var url = "https://wa.me/" + phonenumber + "?text=" +
+        "Name: " + name + "%0a" +
+        "Email: " + email + "%0a" +
+        "Mobile Number: " + mobile_number + "%0a" +
+        "message : " + message + "%0a" ;
+
+
+
+
+
+
+      window.open(url, '_blank').focus();
+    }
+  
+    function sendemail() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var mobile_number = document.getElementById("mobile_number").value;
+      var message = document.getElementById("message").value;
+     
+  
+      var templateParams = {
+        name: name,
+        email: email,
+        mobile_number: mobile_number,
+        message: message,
+       
+      };
+  
+      emailjs.send("service_rmsowe8", "template_tasqu2d", templateParams)
+        .then(function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+          window.alert("Sent successfully!");
+        }, function(error) {
+          console.error("FAILED...", error);
+          window.alert("Failed to send email. Please try again later.");
+        });
+    }
+  </script>
+   <!-- email js jk talent solutions end -->
 
 
     <!-- Footer Starts Here -->

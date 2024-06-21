@@ -9,7 +9,7 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Finance Business - Contact Page</title>
+    <title>JK Talent Solutions</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -142,9 +142,46 @@ https://templatemo.com/tm-545-finance-business
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Send us a <em>message</em></h2>
-              <span>Suspendisse a ante in neque iaculis lacinia</span>
+             
             </div>
           </div>
+          <!-- email.js start -->
+          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <script>
+            // Replace with your own Email.js user ID
+            const EMAILJS_USER_ID = 'your_emailjs_user_id';
+          
+            // Function to send email
+            function sendEmail(event) {
+              event.preventDefault(); // Prevent default form submission
+          
+              // Get form data
+              let formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+              };
+          
+              // Send email using Email.js
+              emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, EMAILJS_USER_ID)
+                .then(function(response) {
+                  console.log('Email sent:', response);
+                  alert('Your message has been sent successfully!');
+                  document.getElementById('contact-form').reset(); // Reset form after successful submission
+                }, function(error) {
+                  console.error('Error sending email:', error);
+                  alert('There was an error sending your message. Please try again later.');
+                });
+            }
+          
+            // Add submit event listener to the form
+            document.getElementById('contact-form').addEventListener('submit', sendEmail);
+          </script>
+          
+          <!-- email.js end -->
+         
+
           <div class="col-md-12">
             <div class="contact-form">
               <form id="contact" action="" method="get">

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payroll Services at JK Talent Solutions</title>
+<style>
+  .down-content {
+    margin-bottom: 20px;
+  }
+
+  .more-content2 {
+    display: none; /* Initially hide the additional content */
+    margin-top: 10px;
+  }
+
+  .read-more-btn2 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="down-content">
+  <h4>Payroll Services</h4>
+  <p>
+    At JK Talent Solutions, we streamline your payroll process with accuracy and efficiency. Our comprehensive payroll services ensure 
+    <span class="more-content2" id="more-content2">
+      timely and precise wage calculations, tax filings, and compliance with legal requirements. We handle everything from direct deposits to employee deductions, allowing you to focus on your core business. Partner with us for a hassle-free payroll experience that guarantees confidentiality, reliability, and satisfaction for both employers and employees.
+    </span>
+  </p>
+  <button class="read-more-btn2" onclick="toggleContent2()">Read More</button>
+</div>
+
+<script>
+  function toggleContent2() {
+    var moreText = document.getElementById("more-content2");
+    var btnText = document.querySelector(".read-more-btn2");
+
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      moreText.style.display = "inline"; // Show more content
+      btnText.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none"; // Hide more content
+      btnText.textContent = "Read More";
+    }
+  }
+</script>
+
+</body>
+</html>

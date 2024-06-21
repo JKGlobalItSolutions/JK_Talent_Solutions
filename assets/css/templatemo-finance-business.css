@@ -1430,4 +1430,32 @@ footer .contact-form button.filled-button:hover {
 		color:#ff0000!important;
 		border-bottom: none!important;
 	}
+} 
+/* j paragraph  start*/
+@media (max-width: 768px) {
+	.owl-testimonials .testimonial-item {
+	  display: block;
+	  text-align: center;
+	}
+	.owl-testimonials .testimonial-item h4,
+	.owl-testimonials .testimonial-item p {
+	  display: block;
+	  width: 100%;
+	}
+  }
+  
+/* j paragraph  end*/
+
+/* j navbar start */
+.navbar-brand {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
 }
+
+.navbar-logo {
+    height: 100px;
+    max-height: 100px;
+    width: auto;
+}
+
+/* j navbar end */

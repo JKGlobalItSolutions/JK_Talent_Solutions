@@ -180,13 +180,27 @@ https://templatemo.com/tm-545-finance-business
               <img src="assets/images/service_01.jpg" alt="">
               <div class="down-content">
                 <h4>Recruitment</h4>
-                <p>Join Our Team at JK Talent Solutions, we are dedicated to connecting talented individuals with exceptional opportunities. <span id="more-content" class="more-content">Our mission is to empower both job seekers and employers by fostering meaningful connections and providing unparalleled recruitment services.
+                <p>
+                  We connect businesses with top-tier talent, ensuring the perfect match between employers and candidates. Our meticulous recruitment process is <span class="more-content1" id="more-content1"> designed to identify and attract the best professionals, saving you time and resources while enhancing your workforce quality.
                   
-                  We are always on the lookout for passionate, driven, and innovative professionals to join our dynamic team.  When you become a part of JK Talent Solutions, you are joining a company that values integrity, collaboration, and excellence. </span></p>
-                  <br>
-                  
-                  
-                <button  onclick="toggleContent()" id="read-more-btn" class="read-more-btn">Read More</button>
+                    At JK Talent Solutions, we are more than a recruitment agency—we are partners in transforming businesses through exceptional talent acquisition and management solutions. We pride ourselves on our commitment to excellence, innovation, and building lasting relationships with our clients and candidates alike.
+                  </span>
+                </p>
+                <button class="read-more-btn1 filled-button" onclick="toggleReadMore1()">Read More</button>
+                <script>
+                  function toggleReadMore1() {
+                    var moreContent = document.getElementById('more-content1');
+                    var buttonText = document.querySelector('.read-more-btn1');
+                
+                    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                      moreContent.style.display = 'inline'; // Show more content
+                      buttonText.textContent = 'Read Less';
+                    } else {
+                      moreContent.style.display = 'none'; // Hide more content
+                      buttonText.textContent = 'Read More';
+                    }
+                  }
+                </script>
               </div>
             </div>
           </div>
@@ -195,11 +209,26 @@ https://templatemo.com/tm-545-finance-business
               <img src="assets/images/service_02.jpg" alt="">
               <div class="down-content">
                 <h4>Employee Engagement Activities</h4>
-                <p>Employee Engagement at JK Talent Solutions
-
-At JK Talent Solutions, we believe that engaged employees are the key to a thriving workplace. <span class="more-content" id="more-content"> We offer a variety of activities designed to boost morale, foster teamwork, and promote a positive work environment. From team-building events and wellness programs to professional development workshops and social gatherings, our initiatives are tailored to meet the diverse needs of our team. Join us and experience a workplace and your growth is encouraged.</span></p>
-                  <div style="margin-top: 27px;"></div>
-                <button class="read-more-btn" id="read-more-btn">Read More</button>
+                <p>
+                  Employee Engagement at JK Talent Solutions.At JK Talent Solutions, we believe that engaged employees are the   <span class="more-content" id="more-content"> key to a  thriving workplace.
+                  We offer a variety of activities designed to boost morale, foster teamwork, and promote a positive work environment. From team-building events and wellness programs to professional development workshops and social gatherings, our initiatives are tailored to meet the diverse needs of our team.Join us and experience a workplace where your growth is encouraged.
+                  </span>
+                </p>
+                <button style="margin-top: 7px;" class="read-more-btn filled-button" id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+                <script>
+                  function toggleReadMore() {
+                    var moreContent = document.getElementById('more-content');
+                    var buttonText = document.getElementById('read-more-btn');
+                
+                    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                      moreContent.style.display = 'inline'; // Show more content
+                      buttonText.textContent = 'Read Less';
+                    } else {
+                      moreContent.style.display = 'none'; // Hide more content
+                      buttonText.textContent = 'Read More';
+                    }
+                  }
+                </script>
               </div>
             </div>
           </div>
@@ -208,11 +237,30 @@ At JK Talent Solutions, we believe that engaged employees are the key to a thriv
             <div class="service-item">
               <img src="assets/images/service_03.jpg" alt="">
               <div class="down-content">
+  
                 <h4>Payroll Services</h4>
-               <p>At JK Talent Solutions, we streamline your payroll process with accuracy and efficiency. Our comprehensive payroll services ensure <span class="more-content" id="more-content"> timely and precise   wage calculations, tax filings, and compliance with legal requirements.  We handle everything from direct deposits to employee deductions, allowing you to focus on your core business. Partner with us for a hassle-free payroll experience that guarantees confidentiality, reliability, and satisfaction for both employers and employees. </span></p>
-               <br>
-                <button href="" onclick="toggleContent()" class="read-more-btn" id="read-more-btn">Read More</button>
-              </div>
+                <p>
+                  At JK Talent Solutions, we streamline your payroll process with accuracy and efficiency. Our comprehensive payroll services ensure 
+                  <span class="more-content2" id="more-content2">
+                    timely and precise wage calculations, tax filings, and compliance with legal requirements. We handle everything from direct deposits to employee deductions, allowing you to focus on your core business. Partner with us for a hassle-free payroll experience that guarantees confidentiality, reliability, and satisfaction for both employers and employees.
+                  </span>
+                </p>
+                <button class="read-more-btn2 filled-button" onclick="toggleContent2()">Read More</button>
+                <script>
+                  function toggleContent2() {
+                    var moreText = document.getElementById("more-content2");
+                    var btnText = document.querySelector(".read-more-btn2");
+                
+                    if (moreText.style.display === "none" || moreText.style.display === "") {
+                      moreText.style.display = "inline"; // Show more content
+                      btnText.textContent = "Read Less";
+                    } else {
+                      moreText.style.display = "none"; // Hide more content
+                      btnText.textContent = "Read More";
+                    }
+                  }
+                </script>
+</div>
             </div>
           </div>
           <div class="col-md-4">
@@ -220,10 +268,27 @@ At JK Talent Solutions, we believe that engaged employees are the key to a thriv
               <img src="assets/images/service_02.jpg" alt="">
               <div class="down-content">
                 <h4>Training and Development</h4>
-                <p>At JK Talent Solutions, we are committed to fostering growth and enhancing skills through our tailored training and development programs. <span id="more-content" class="more-content"> Our services include workshops, seminars, and one-on-one coaching sessions designed to meet the unique needs of your team. By focusing on both professional and personal development, we empower employees to reach their full potential and drive organizational success. Partner with us to cultivate a culture of continuous learning and improvement.</span></p>
-                <br>
-                <div style="margin-top: 5px;"></div>
-                <button class="read-more-btn" id="read-more-btn">Read More</button>
+                <p>
+                  At JK Talent Solutions, we are committed to fostering growth and enhancing skills through our tailored training and development programs. 
+                  <span id="more-content3" class="more-content3">
+                    Our services include workshops, seminars, and one-on-one coaching sessions designed to meet the unique needs of your team. By focusing on both professional and personal development, we empower employees to reach their full potential and drive organizational success. Partner with us to cultivate a culture of continuous learning and improvement.
+                  </span>
+                </p>
+                <button class="read-more-btn3 filled-button" id="read-more-btn3" onclick="toggleContent3()">Read More</button>
+                <script>
+                  function toggleContent3() {
+                    var moreText = document.getElementById("more-content3");
+                    var btnText = document.getElementById("read-more-btn3");
+                
+                    if (moreText.style.display === "none" || moreText.style.display === "") {
+                      moreText.style.display = "inline"; // Show more content
+                      btnText.textContent = "Read Less";
+                    } else {
+                      moreText.style.display = "none"; // Hide more content
+                      btnText.textContent = "Read More";
+                    }
+                  }
+                </script>
               </div>
             </div>
           
@@ -401,37 +466,8 @@ At JK Talent Solutions, we believe that engaged employees are the key to a thriv
       </div>
     </div>
 
-    <div class="partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="owl-partners owl-carousel">
-            
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" title="1" alt="1">
-              </div>
-              
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" title="2" alt="2">
-              </div>
-              
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" title="3" alt="3">
-              </div>
-              
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" title="4" alt="4">
-              </div>
-              
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" title="5" alt="5">
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
+        
 
 
     <!-- Footer Starts Here -->

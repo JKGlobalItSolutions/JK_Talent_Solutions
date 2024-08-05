@@ -1,645 +1,810 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
+<head>
     <title>JK Talent Solutions</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-<!--
+<body>
+    <header>
 
-Finance Business TemplateMo
+        <style>
+            /* Ensure the logo is always visible and aligned to the left */
+            .navbar-brand {
+                margin-right: auto;
+                /* Align logo to the left */
+            }
 
-https://templatemo.com/tm-545-finance-business
+            /* Ensure the toggler is hidden on larger screens */
+            .navbar-toggler {
+                display: none;
+                /* Hide toggler by default */
+            }
 
--->
-  </head>
+            @media (max-width: 991px) {
+                .navbar-toggler {
+                    display: block;
+                    /* Show toggler on mobile and tablet screens */
+                }
+            }
+        </style>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-light py-4">
+            <div class="container-fluid">
+                <!-- Logo for All Views -->
+                <a class="navbar-brand ms-0 ms-lg-3 " href="#">
+                    <img class="img-fluid" style="height: 50px;" src="./images/JK LOGO.png" alt="Logo">
+                </a>
 
-  <body>
+                <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex justify-content-between w-100 ms-0 ms-lg-5 me-5">
+                        <li class="nav-item">
+                            <a style="color: #000000; font-weight: 600;" class="nav-link active" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="services.html"
+                                id="navbarDropdownServices" role="button">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+                                <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
+                                <li><a class="dropdown-item" href="private.html">Private Security And Manned Guarding</a></li>
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
 
-    <!-- Header -->
-    <div class="sub-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-xs-12">
-            <ul class="left-info">
-              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Sat 09:15AM - 6:15PM</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>+91 8438438413</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="right-icons">
-              <li><a href="https://www.instagram.com/jktalentsolution_official/"><i class="fa fa-instagram"></i></a></li>
-              <li><a href=""><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/jktalentsolutions?trk=public_post_main-feed-card-text"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.youtube.com/@jktalentsolutionsofficial"><i class="fa fa-youtube"></i></a></li>
-            
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+                                <li><a class="dropdown-item" href="catering.html">Catering</a></li>
+                                <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="sectors.html"
+                                id="navbarDropdownSectors" role="button">
+                                Sectors
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownSectors">
+                                <li><a class="dropdown-item" href="it.html">IT ( Information Technology )</a></li>
+                                <li><a class="dropdown-item" href="bpo.html">BPO ( Business Process Outsourcing )</a></li>
+                                <li><a class="dropdown-item" href="hotels.html">Hotels</a></li>
+                                <li><a class="dropdown-item" href="hospital.html">Hospitals And Healthcare</a></li>
+                                <li><a class="dropdown-item" href="education.html">Education</a></li>
+                                <li><a class="dropdown-item" href="banking.html">Banking And Financial Services</a></li>
+                                <li><a class="dropdown-item" href="public.html">Public Administration</a></li>
+                                <li><a class="dropdown-item" href="industrial.html">Industrial</a></li>
+                                <li><a class="dropdown-item" href="retail.html">Retail</a></li>
+                                <li><a class="dropdown-item" href="othersectors.html">Other Sectors</a></li>
+                              
+                            </ul>
+                        </li>
+                        <style>
+                            /* Hide the dropdown menu by default */
+                            .dropdown-menu-hover {
+                                display: none;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                z-index: 1000;
+                            }
 
-    <header class="">
-      <nav style="height: 80%;" class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img class="navbar-logo" src="./assets/images/Logo JK Talent Solutions.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#top">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="one-page.html">One Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="itopenings.html">IT Openings</a>
-                    </li>
-                </ul>
+                            /* Show the dropdown menu when hovering over the parent item */
+                            .nav-item:hover .dropdown-menu-hover {
+                                display: block;
+                            }
+
+                            /* Additional styling to ensure the dropdown menu appears as needed */
+                            .nav-item {
+                                position: relative;
+                            }
+
+                            .dropdown-menu-hover {
+                                background-color: white;
+                                border: 1px solid #ddd;
+                                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                            }
+
+                            /* Style dropdown items as needed */
+                            .dropdown-item {
+                                color: #FF0000;
+                                font-weight: 600;
+                                text-decoration: none;
+                                padding: 8px 16px;
+                            }
+
+                            .dropdown-item:hover {
+                                background-color: #f8f9fa;
+                            }
+                        </style>
+
+
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training &
+                                Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="career.html">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <div class="slider">
+            <div class="slides">
+               
+                <div class="slide"><img src="./images/Banner 1.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div>
+                <div class="slide"><img src="./images/Banner 3.png" alt="Slide 1"></div>
+            </div>
+            <button class="nav-button prev">&#10094;</button>
+            <button class="nav-button next">&#10095;</button>
         </div>
-    </nav>
+        
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+        
+            .slider {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+        
+            .slides {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
+        
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+            }
+        
+            .slide img {
+                width: 100%;
+                display: block;
+            }
+        
+            .nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1000;
+            }
+        
+            .prev {
+                left: 10px;
+            }
+        
+            .next {
+                right: 10px;
+            }
+        </style>
+        
+        <script>
+            const slides = document.querySelector('.slides');
+            const slideCount = document.querySelectorAll('.slide').length;
+            let currentIndex = 0;
+            let slideInterval;
+        
+            function goToSlide(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                currentIndex = index;
+            }
+        
+            function nextSlide() {
+                if (currentIndex < slideCount - 1) {
+                    goToSlide(currentIndex + 1);
+                } else {
+                    goToSlide(0);
+                }
+            }
+        
+            function prevSlide() {
+                if (currentIndex > 0) {
+                    goToSlide(currentIndex - 1);
+                } else {
+                    goToSlide(slideCount - 1);
+                }
+            }
+        
+            function startSlideShow() {
+                slideInterval = setInterval(nextSlide, 3000); // Change slides every 3 seconds
+            }
+        
+            function stopSlideShow() {
+                clearInterval(slideInterval);
+            }
+        
+            document.querySelector('.next').addEventListener('click', () => {
+                nextSlide();
+                stopSlideShow();
+                startSlideShow();
+            });
+        
+            document.querySelector('.prev').addEventListener('click', () => {
+                prevSlide();
+                stopSlideShow();
+                startSlideShow();
+            });
+        
+            startSlideShow();
+        </script>
+        
+
+      
+
+
+
     </header>
+    <main>
+        <div class="container-fluid my-5 p-3">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="./images/hr image.png" alt="">
+                </div>
+                <div class="col-lg-7 text-left">
+                    <h4 class="fw-bold" style="color: #F01905;">JK Talent Solution</h4>
+                    <div class="d-flex my-3">
+                        <img src="./images/Line 2 (1).png" alt="">
+                    <h1 class="ms-4" style="color: #F01905;"><b> We offer economical HR solutions 
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div class="main-banner header-text" id="top">
-        <div class="Modern-Slider">
-          <!-- Item -->
-          <div class="item item-1">
-            <div class="img-fill">
-                <div class="text-content">
-                  <!-- <h6>we are ready to help you</h6> -->
-                  <h4>Recruitment</h4>
-                  <p>Join Our Team at JK Talent Solutions, we are dedicated to connecting talented individuals with exceptional opportunities.
-                    Our mission is to empower both job seekers and employers by fostering meaningful connections and providing unparalleled recruitment services.
-                  
-                  </p>
-                  
+                   
+                        for your company. </b></h1>
+                    </div>
+                        <p class="mt-4" style="color: #151515; font-weight: 600;">As your HR solutions partner, JK Talent Solutions is devoted to providing the greatest quality at the lowest possible cost to customers. We make the required investments in technology and processes to improve efficiency at all levels.</p>
+                        <p style="color: #151515; font-weight: 600;">JK Talent Solutions prioritizes you and your workers and offers an uncompromised experience.</p>
+                        <div class="row text-lg-left text-left  ">
+                            <div class="col-lg-4 my-2">
+                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Efficiency</p>
+                                <p style="font-weight: 600;" > <img src="./images/tick.png" alt=""> Innovation</p>
+                            </div>
+                            <div class="col-lg-4 my-2">
+                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Security</p>
+                                <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Customization</p>
+                            </div>
+                            <div class="col-lg-4 my-2">
+                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Integrity</p>
+                                <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Affordable</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/under.png" alt="">
+                            </div>
+                            <div class="col-lg-10">
+                                <p style="font-weight: 600;">Understanding your workflow, tailoring to your needs, and swiftly transitioning to the leading HR management platform in the industry.</p>
+                            </div>
+                        </div>
+                        <div class="text-lg-left text-center">
+                        <img  style="height: 70px;" class="img-fluid my-3" src="./images/trust.png" alt="">
+
+                        </div>
+
                 </div>
             </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item item-2">
-            <div class="img-fill">
-                <div class="text-content">
-                  <!-- <h6>we are here to support you</h6> -->
-                  <h4>Employee Engagement Activities</h4>
-                  <p>At JK Talent Solutions, we believe that engaged employees are the key to a thriving workplace.  We offer a variety of activities designed to boost morale, foster teamwork, and promote a positive work environment. From team-building events and wellness programs to professional development workshops and social gatherings, our initiatives are tailored to meet the diverse needs of our team. Join us and experience a workplace and your growth is encouraged.</p>
-                </div>
-            </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item item-3">
-            <div class="img-fill">
-                <div class="text-content">
-                  <!-- <h6>we have a solid background</h6> -->
-                  <h4>Payroll Services</h4>
-                  <p>At JK Talent Solutions, we streamline your payroll process with accuracy and efficiency. Our comprehensive payroll services ensure  timely and precise   wage calculations, tax filings, and compliance with legal requirements.  We handle everything from direct deposits to employee deductions, allowing you to focus on your core business. Partner with us for a hassle-free payroll experience that guarantees confidentiality, reliability, and satisfaction for both employers and employees.</p>
-                </div>
-            </div>
-          </div>
-          <div class="item item-4">
-            <div class="img-fill">
-                <div class="text-content">
-                  <!-- <h6>we have a solid background</h6> -->
-                  <h4>Training &amp; development</h4>
-                  <p>At JK Talent Solutions, we are committed to fostering growth and enhancing skills through our tailored training and development programs. Our services include workshops, seminars, and one-on-one coaching sessions designed to meet the unique needs of your team. By focusing on both professional and personal development, we empower employees to reach their full potential and drive organizational success. Partner with us to cultivate a culture of continuous learning and improvement.</p>
-                 
-                </div>
-            </div>
-          </div>
-         
-          <!-- // Item -->
         </div>
-    </div>
-    <!-- Banner Ends Here -->
+        <div class="container my-3 my-lg-5 mt-4">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-12 col-lg-6 my-4 my-lg-0 text-center">
+                    <img class="img-fluid" src="./images/flow 1.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3 class="fw-bold text-center text-lg-start" style="color: #FF0000;">About Us</h3>
+                    <p class="text-center text-lg-start" style="font-weight: 600;">We are one of the top providers of integrated facilities management
+                        services in India, specializing in the fields of healthcare, education,
+                        public administration (including state, local, and federal agencies), 
+                        airports, trains, metro infrastructure, and retail. We are one of the
+                        few firms in India with a broad geographic reach and clientele that
+                        serves nearly every end-user segment since we offer an extensive
+                        array of integrated facilities management services across several 
+                        industries.</p>
+                       <div class="text-center text-lg-start">
+                       <button class="p-2 " style="border: none; background-color: #C80036;color: white;">View More</button>
 
-    <div class="request-form">
-      <div class="container">
-        <div style="justify-content: center;align-items: center;" class="row">
-          <div class="col-md-8">
-            <h4>Request a call back right now ?</h4>
-            
-          </div>
-          <div class="col-md-4">
-            <a href="contact.html" class="border-button">Contact Us</a>
-          </div>
+                       </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    
-
-    <div class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Our <em>Services</em></h2>
-              
+        <!-- images start-->
+        <div class="container my-5 text-center">
+            <h1 class="text-center fw-bolder mb-0 mb-lg-5" style="color: #C80036;">OUR SERVICES</h1>
+            <div class="row my-3">
+                <div class="col-12 col-lg-3 col-md-4 my-3 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 1.png" alt="">
+                        <div class="overlay">
+                            <h6> Comprehensive HR Services</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 my-3 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 2.png" alt="">
+                        <div class="overlay">
+                            <h6>Integrated Facility Management</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 my-3 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 3.png" alt="">
+                        <div class="overlay">
+                           <h6>Private Security&Manned Guarding</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h  i 4.png" alt="">
+                        <div class="overlay">
+                           <h6>Catering</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 d-lg-none d-none d-md-block my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 5.png" alt="">
+                        <div class="overlay">
+                           <h6>Other Services</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="col-md-4">
-            <div class="service-item">
-              <img src="assets/images/service_01.jpg" alt="">
-              <div class="down-content">
-                <h4>Recruitment</h4>
-                <p>
-                  We connect businesses with top-tier talent, ensuring the perfect match between employers and candidates. Our meticulous recruitment process is <span class="more-content1" id="more-content1"> designed to identify and attract the best professionals, saving you time and resources while enhancing your workforce quality.
-                  
-                    At JK Talent Solutions, we are more than a recruitment agency—we are partners in transforming businesses through exceptional talent acquisition and management solutions. We pride ourselves on our commitment to excellence, innovation, and building lasting relationships with our clients and candidates alike.
-                  </span>
-                </p>
-                <button class="read-more-btn1 filled-button" onclick="toggleReadMore1()">Read More</button>
-                <script>
-                  function toggleReadMore1() {
-                    var moreContent = document.getElementById('more-content1');
-                    var buttonText = document.querySelector('.read-more-btn1');
-                
-                    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
-                      moreContent.style.display = 'inline'; // Show more content
-                      buttonText.textContent = 'Read Less';
-                    } else {
-                      moreContent.style.display = 'none'; // Hide more content
-                      buttonText.textContent = 'Read More';
-                    }
-                  }
-                </script>
-              </div>
+            <div class="row my-3 my-lg-3">
+                <div class="col-12 col-lg-3 col-md-4 d-lg-block d-md-none my-lg-0">
+                    <div class="image-container">
+                        <img class="img-fluid" src="./images/h i 5.png" alt="">
+                        <div class="overlay">
+                            <h6>Other Services</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-item">
-              <img src="assets/images/service_02.jpg" alt="">
-              <div class="down-content">
-                <h4>Employee Engagement Activities</h4>
-                <p>
-                  Employee Engagement at JK Talent Solutions.At JK Talent Solutions, we believe that engaged employees are the   <span class="more-content" id="more-content"> key to a  thriving workplace.
-                  We offer a variety of activities designed to boost morale, foster teamwork, and promote a positive work environment. From team-building events and wellness programs to professional development workshops and social gatherings, our initiatives are tailored to meet the diverse needs of our team.Join us and experience a workplace where your growth is encouraged.
-                  </span>
-                </p>
-                <button style="margin-top: 7px;" class="read-more-btn filled-button" id="read-more-btn" onclick="toggleReadMore()">Read More</button>
-                <script>
-                  function toggleReadMore() {
-                    var moreContent = document.getElementById('more-content');
-                    var buttonText = document.getElementById('read-more-btn');
-                
-                    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
-                      moreContent.style.display = 'inline'; // Show more content
-                      buttonText.textContent = 'Read Less';
-                    } else {
-                      moreContent.style.display = 'none'; // Hide more content
-                      buttonText.textContent = 'Read More';
-                    }
-                  }
-                </script>
-              </div>
-              
-              
-            </div>
-          </div>
-                
-          <div class="col-md-4">
-            <div class="service-item">
-              <img src="assets/images/service_03.jpg" alt="">
-                <div class="down-content">
-  
-                  <h4>Payroll Services</h4>
-                  <p>
-                    At JK Talent Solutions, we streamline your payroll process with accuracy and efficiency. Our comprehensive payroll services ensure 
-                    <span class="more-content2" id="more-content2">
-                      timely and precise wage calculations, tax filings, and compliance with legal requirements. We handle everything from direct deposits to employee deductions, allowing you to focus on your core business. Partner with us for a hassle-free payroll experience that guarantees confidentiality, reliability, and satisfaction for both employers and employees.
-                    </span>
-                  </p>
-                  <button class="read-more-btn2 filled-button" onclick="toggleContent2()">Read More</button>
-                  <script>
-                    function toggleContent2() {
-                      var moreText = document.getElementById("more-content2");
-                      var btnText = document.querySelector(".read-more-btn2");
-                  
-                      if (moreText.style.display === "none" || moreText.style.display === "") {
-                        moreText.style.display = "inline"; // Show more content
-                        btnText.textContent = "Read Less";
-                      } else {
-                        moreText.style.display = "none"; // Hide more content
-                        btnText.textContent = "Read More";
-                      }
-                    }
-                  </script>
-</div>
-
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-item">
-              <img src="assets/images/service_02.jpg" alt="">
-              <div class="down-content">
-                <h4>Training and Development</h4>
-                <p>
-                  At JK Talent Solutions, we are committed to fostering growth and enhancing skills through our tailored training and development programs. 
-                  <span id="more-content3" class="more-content3">
-                    Our services include workshops, seminars, and one-on-one coaching sessions designed to meet the unique needs of your team. By focusing on both professional and personal development, we empower employees to reach their full potential and drive organizational success. Partner with us to cultivate a culture of continuous learning and improvement.
-                  </span>
-                </p>
-                <button class="read-more-btn3 filled-button" id="read-more-btn3" onclick="toggleContent3()">Read More</button>
-                <script>
-                  function toggleContent3() {
-                    var moreText = document.getElementById("more-content3");
-                    var btnText = document.getElementById("read-more-btn3");
-                
-                    if (moreText.style.display === "none" || moreText.style.display === "") {
-                      moreText.style.display = "inline"; // Show more content
-                      btnText.textContent = "Read Less";
-                    } else {
-                      moreText.style.display = "none"; // Hide more content
-                      btnText.textContent = "Read More";
-                    }
-                  }
-                </script>
-              </div>
-             
-
-            </div>
-          
-                
-              </div>
-            </div>
-          </div>
         </div>
-          
-        </div>
-      </div>
-    </div>
+        <style>
+            .image-container {
+    position: relative;
+    display: inline-block;
+}
 
-    <div class="fun-facts">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="left-content">
-             
-              <h2>Our solutions for your <em>business growth</em></h2>
-              <p>At JK Talent Solutions, we are dedicated to driving your business growth through our comprehensive manpower services. We understand that your success depends on having the right people, engaged and well-managed, within your organization. That’s why we offer tailored solutions in recruitment, employee engagement, payroll services, and training and development, all designed to support and accelerate your business growth.</p>
-              
-            </div>
-          </div>
-          <div class="col-md-6 align-self-center">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">700</div>
-                  <div class="count-title">Work Hours</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">623</div>
-                  <div class="count-title">Great Reviews</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">203</div>
-                  <div class="count-title">Projects Done</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">13</div>
-                  <div class="count-title">Awards Won</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+.image-container img {
+    transition: opacity 0.3s ease;
+}
 
-    <div class="more-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="more-info-content">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="left-image">
-                    <img style="height:450px; margin-top: 50px;" src="assets/images/pexels-sora-shimazaki-5673488.jpg" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6 align-self-center">
-                  <div class="right-content">
-                    <span>Who we are</span>
-                    <h2>Get to know about <em>JK Talent Solutions</em></h2>
-                    <p>JK Talent SolutionsAt JK Talent Solutions, we specialize in providing comprehensive manpower solutions tailored to meet the unique needs of businesses across various industries. Our suite of services includes recruitment, employee engagement activities, payroll management, and training and development. Partner with JK Talent Solutions and experience the difference in quality manpower services. We are committed to your success, providing strategic solutions that enhance your workforce and drive your business forward.</p>
+.image-container:hover img {
+    filter: brightness(60%) /* Decrease image opacity on hover */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF0000; /* Red background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1.5; /* Show overlay on hover */
+}
+
+        </style>
+        
+        <!-- images end -->
+
+
+         <!-- Sectors start -->
+                <div style="background-color: #EEEEEE;" class="sector pb-4 ">
+                        <h1 class="text-center fw-bolder pt-5" style="color: #FF0000;">OUR SECTORS</h1>
+                        <div class="container">   
+                        <div class="row my-5">
+                            <div class="col-12 col-lg-4 text-center   my-3">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2 ">
+                                        <img class="img-fluid " src="./images/sector logo/sector logo 1.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start text-center" style="color: #FF0000;">IT ( Information Technology )</h5>
+                                        <p class="text-lg-start text-center" style="color: #1A2130; font-weight: 600;">
+                                            Our company specializes in providing cutting-edge Information Technology solutions tailored to meet diverse business needs.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-lg-4 text-center my-3">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2 text-center">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 2.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hospitals</h5>
+                                        <p class="text-lg-start"  style="color: #1A2130;font-weight: 600;">In this industry, we offer services to hospitals 
+                                            and medical facilities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center mt-3">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 3.png" alt="">
+                                    </div>
+                                    <div class="col-12  col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Education</h5>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We offer our services to government officials, private and public schools, electricity boards, and district consumer forums.</p>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                        </div>
+                        <div class="row  ">
+                           
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 4.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">BPO (Business Process Outsourcing)</h5>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">Our company specializes in BPO services, offering efficient outsourcing solutions for various business processes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 5.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Banking and Financial Services</h5>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We work with branches in the financial services and banking industries.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center ">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 6.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Public Administration</h5>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We provide our services to state, local, and government officials as well as to district and power board consumer forums.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                          
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 7.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hotels</h5>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">In this industry, we offer services to hospitals 
+                                            and medical facilities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center mb-4">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 8.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Airport</h5>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We offer our services in metro stations, train stations, and airports.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center">
+                                <div class="row align-items-center justify-content-center my-3">
+                                    <div class="col-12 col-lg-2">
+                                        <img class="img-fluid" src="./images/sector logo/sector logo 9.png" alt="">
+                                    </div>
+                                    <div class="col-12 col-lg-10">
+                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Industrial</h5>
+                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We work with manufacturing companies, offering our services.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                          
+                        </div>
+                    </div>
                     
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+         <!-- Sectors end -->
 
-    <div class="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Recruitment</h2>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="">
-              <div class="testimonial-item">
-                <div class="inner-content">
-                  <h4>PERMANENT STAFFING</h4>
-                  <br>
-                  <p>Organizations keep looking at hiring good leaders as part of their growth strategy. The challenge is to get appropriate alignment of leader's aspirations with the directions of the organization.</p>
-                </div>
-              </div>
-              <div class="testimonial-item">
-                <div class="inner-content">
-                  <h4>CONTRACT STAFFING</h4>
-                  <br>
-                  <p>We bring you the innovative staffing solutions which are agile enough to meet the rapidly changing talent needs of today's world of work.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-
-    <div class="callback-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Request a <em>call back</em></h2>
-              <span>Etiam suscipit ante a odio consequat</span>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="contact-form">
-              <form id="myform" action="" method="">
+         <!-- work process start -->
+         <div id="start" class="work-process">
+            <h1>Our Work Process</h1>
+            <div class="container">
                 <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="mobile" type="text" class="form-control" id="mobile_number" placeholder="mobile no" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="border-button">Send Message</button>
-                    </fieldset>
-                  </div>
+                    <div class="col-md-4">
+                        <div class="counter" data-target="30">0</div>
+                        <p>Employees</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="counter" data-target="200">0</div>
+                        <p>Clients</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="counter" data-target="3" data-speed="100">0</div>
+                        <p>Total Years</p>
+                    </div>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
-      <br>
-      <br>
-      <br>
-    </div>
+        
+        <script>
+            // Function to start counting
+            const startCounters = () => {
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    counter.innerText = '0';
+                    const updateCounter = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const speed = counter.getAttribute('data-speed') || 10; // Default speed for other counters
+                        const increment = target / (200 * (speed / 10));
+                        if (count < target) {
+                            counter.innerText = `${Math.ceil(count + increment)}`;
+                            setTimeout(updateCounter, speed);
+                        } else {
+                            counter.innerText = `${target}+`;
+                        }
+                    };
+                    updateCounter();
+                });
+            };
+        
+            // Intersection Observer callback
+            const handleIntersection = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                        observer.unobserve(entry.target); // Stop observing after starting the counters
+                    }
+                });
+            };
+        
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver(handleIntersection, {
+                threshold: 0.1 // Adjust threshold as needed
+            });
+        
+            // Observe the #start element
+            observer.observe(document.getElementById('start'));
+        </script>
+        
+        <style>
+            .work-process {
+                background-color: #ff0000;
+                color: white;
+                padding: 50px 0;
+                text-align: center;
+            }
+            .work-process h1 {
+                margin-bottom: 30px;
+                font-size: 2.5em;
+            }
+            .counter {
+                font-size: 2em;
+                font-weight: bold;
+            }
+        </style>
+        
+         <!-- work process end -->
 
-   <!-- email js jk talent solutions start -->
-   <script>
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent default form submission
-      sendMessage(); // Call the sendMessage function
-      // sendemail(); 
-      // Call the sendemail function
-    });
-  
-    function sendMessage() {
-      var phonenumber = "+8438438413"; // Your WhatsApp phone number
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var mobile_number = document.getElementById("mobile_number").value;
-      var message = document.getElementById("message").value;
-     
-  
-      var url = "https://wa.me/" + phonenumber + "?text=" +
-        "Name: " + name + "%0a" +
-        "Email: " + email + "%0a" +
-        "Mobile Number: " + mobile_number + "%0a" +
-        "message : " + message + "%0a" ;
+         <!-- Benefits start -->
+          <div class="container-fluid text-center p-2 p-lg-5">
+            <h2 class="fw-bold mb-4" style="color: #FF0000;">Benefits Of Integrated Services Provided By JK Talent Solutions</h2>
+          <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 1.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >All-encompassing Method</h5>
+                        <p style="font-weight: 600;" class="text-lg-start">The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 2.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >personalized remedy</h5>
+                        <p style="font-weight: 600;" class="text-lg-start" >At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 3.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Experience and Experts</h5>
+                        <p style="font-weight: 600;" class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 4.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Cost Savings</h5>
+                        <p style="font-weight: 600;" class="text-lg-start" >The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 5.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Real-Time Monitoring &
+                            Reporting</h5>
+                        <p style="font-weight: 600;" class="text-lg-start">At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center my-3">
+                        <img src="./images/benefits/benefits 6.png" alt="">
+                        <h5 class="fw-bold" style="color: #FF0000;" >Access to specialized
+                            services </h5>
+                        <p style="font-weight: 600;" class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                </div>
+              
+              </div>
+          </div>
+          
+        </div>
+         <!-- Benefits end -->
 
-
-
-
-
-
-      window.open(url, '_blank').focus();
-    }
-  
-    function sendemail() {
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var mobile_number = document.getElementById("mobile_number").value;
-      var message = document.getElementById("message").value;
-     
-  
-      var templateParams = {
-        name: name,
-        email: email,
-        mobile_number: mobile_number,
-        message: message,
-       
-      };
-  
-      emailjs.send("service_rmsowe8", "template_tasqu2d", templateParams)
-        .then(function(response) {
-          console.log("SUCCESS!", response.status, response.text);
-          window.alert("Sent successfully!");
-        }, function(error) {
-          console.error("FAILED...", error);
-          window.alert("Failed to send email. Please try again later.");
-        });
-    }
-  </script>
-   <!-- email js jk talent solutions end -->
-
-
-    <!-- Footer Starts Here -->
+    </main>
     <footer>
-      <div class="container">
-        <div style="justify-content: center; align-items: center; gap: 100px
-        ;" class="row">
-          <div style="margin-bottom: 20px;" class="col-md-3 footer-item">
-            <img style="height: 100px;" src="./assets/images/Logo JK Talent Solutions.png"; alt="">
-           <p>At JK Talent Solutions, we are dedicated to driving your business growth through our comprehensive manpower services. We understand that your success depends on having the right people, engaged and well-managed, within your organization.</p>
-            <ul class="social-icons">
-              <li><a href="https://www.instagram.com/jktalentsolution_official/"><i class="fa fa-instagram"></i></a></li>
-              <li><a href=""><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/jktalentsolutions?trk=public_post_main-feed-card-text"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.youtube.com/@jktalentsolutionsofficial"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-          </div>
-          <!-- <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
-            <ul class="menu-list">
-              <li><a href="#">Vivamus ut tellus mi</a></li>
-              <li><a href="#">Nulla nec cursus elit</a></li>
-              <li><a href="#">Vulputate sed nec</a></li>
-              <li><a href="#">Cursus augue hasellus</a></li>
-              <li><a href="#">Lacinia ac sapien</a></li>
-            </ul>
-          </div> -->
-          <!-- <div class="col-md-3 footer-item">
-            <h4>Additional Pages</h4>
-            <ul class="menu-list">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">How We Work</a></li>
-              <li><a href="#">Quick Support</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div> -->
-          <div class="col-md-3 footer-item last-item">
-            <h4>Contact Us</h4>
-            <div class="contact-form">
-              <form id="contact footer-contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
-                    </fieldset>
-                  </div>
+        <style>
+            .footer {
+                background-color: #ff0000;
+                color: white;
+                padding: 40px 0;
+            }
+            .footer h5 {
+                margin-bottom: 10px;
+                font-size: 1.5em;
+                position: relative; /* Position relative for the pseudo-element */
+                padding-bottom: 10px; /* Space for the line */
+            }
+            .footer h5::after {
+                content: "";
+                display: block;
+                width: 100%; /* Width of the line */
+                height: 1px; /* Thickness of the line */
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%); /* Center the line horizontally */
+            }
+            .footer hr {
+                border-top: 1px solid white;
+                width: 140px; /* Adjusted width */
+                margin: 10px auto 20px auto; /* Center the hr element */
+            }
+            .footer a {
+                color: white;
+                text-decoration: none;
+            }
+            .footer a:hover {
+                text-decoration: underline;
+            }
+            .footer .social-icons a {
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+            .footer .contact-info p {
+                margin: 5px 0;
+            }
+            .footer .contact-info i {
+                margin-right: 10px;
+            }
+            .footer .copyright {
+                margin-top: 20px;
+                text-align: center;
+                border-top: 1px solid white;
+                padding-top: 10px;
+            }
+            @media (max-width: 768px) {
+                .footer .row.text-center.text-md-left {
+                    text-align: center;
+                }
+                .footer .row.text-center.text-md-left > div {
+                    margin-bottom: 20px;
+                }
+                .footer h5::after {
+                    width: 50%; /* Adjust width if necessary */
+                }
+            }
+        </style>
+        
+        <div class="footer">
+            <div class="container-fluid ">
+                <div class="row text-center text-md-left ms-lg-5 me-lg-5">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Connections</h5>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"><h6>Home</h6></a></li>
+                            <li><a href="career.html"><h6>Career</h6></a></li>
+                            <li><a href="about.html"><h6>About</h6></a></li>
+                            <li><a href="contact.html"><h6>Contact us</h6></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Get in touch</h5>
+                        <hr>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> hr@JKtalentsolutions.com</p>
+                            <p><i class="fas fa-phone"></i> 8807880764, 8438438413</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                            </div>
+                  
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center ">
+                        <img src="./images/JK LOGO 2.png" alt="JK Talent Solutions Logo" class="img-fluid mb-3">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/jktalentsolution_off"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/talent_jk47795"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@JKTALENTSOLUTIONS-o4l"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
                 </div>
-              </form>
+                <div class="row mt-5 me-lg-5 ms-lg-5">
+                    <div class="col-12">
+                        <p class="copyright fw-bold">&copy; <b>2024 JK Talent Solutions.</b> </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </footer>
     
-    <div class="sub-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Copyright &copy; 2023 JK Talent Solutions.
-            
-            <!-- - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a><br>
-            Distributed By: <a rel="nofollow noopener" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-          </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
 
-    <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/accordions.js"></script>
-
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-      
-      function toggleContent() {
-            var moreContent = document.getElementById("more-content");
-            var btnText = document.getElementById("read-more-btn");
-
-            if (moreContent.style.display === "none") {
-                moreContent.style.display = "inline";
-                btnText.innerHTML = "Read less";
-            } else {
-                moreContent.style.display = "none";
-                btnText.innerHTML = "Read more";
-            }
-        }
-      
-
-    </script>
-
-  </body>
 </html>

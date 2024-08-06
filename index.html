@@ -42,8 +42,23 @@
         <nav class="navbar navbar-expand-lg navbar-light py-4">
             <div class="container-fluid">
                 <!-- Logo for All Views -->
-                <a class="navbar-brand ms-0 ms-lg-3 " href="#">
-                    <img class="img-fluid" style="height: 50px;" src="./images/JK LOGO.png" alt="Logo">
+            
+
+                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">  
+                    <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
+                    <style>
+                        /* Default style for larger screens */
+                        .logs {
+                            height: 55px;
+                        }
+                        
+                        /* Media query for mobile devices */
+                        @media (max-width: 768px) {
+                            .logs {
+                                height: 35px;
+                            }
+                        }
+                        </style>     
                 </a>
 
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
@@ -64,7 +79,7 @@
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="services.html"
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
                                 id="navbarDropdownServices" role="button">
                                 Services
                             </a>
@@ -73,13 +88,14 @@
                                 <li><a class="dropdown-item" href="private.html">Private Security And Manned Guarding</a></li>
                                 <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
 
+                                <li><a class="dropdown-item" href="homerepair.html">Home Repair Services</a></li>
                                 <li><a class="dropdown-item" href="catering.html">Catering</a></li>
                                 <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
                                
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="sectors.html"
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
                                 id="navbarDropdownSectors" role="button">
                                 Sectors
                             </a>
@@ -144,9 +160,9 @@
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="career.html">Career</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
                         </li>
@@ -271,24 +287,32 @@
 
     </header>
     <main>
-        <div class="container-fluid my-5 p-3">
+        <div class="container-fluid my-0 my-lg-0 p-3">
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <img class="img-fluid" src="./images/hr image.png" alt="">
                 </div>
                 <div class="col-lg-7 text-left">
-                    <h4 class="fw-bold" style="color: #F01905;">JK Talent Solution</h4>
+                    <h4 class="fw-bold text-center text-lg-left" style="color: #F01905;">JK Talent Solution</h4>
                     <div class="d-flex my-3">
                         <img src="./images/Line 2 (1).png" alt="">
-                    <h1 class="ms-4" style="color: #F01905;"><b> We offer economical HR solutions 
-
-                   
-                        for your company. </b></h1>
+                        <style>
+                            h1.ms-4 {
+                                color: #F01905;
+                            }
+                            
+                            @media (max-width: 767px) {
+                                h1.ms-4 {
+                                    font-size: 30px;
+                                }
+                            }
+                        </style>
+                         <h1 class="ms-4"><b> We offer economical HR solutions for your company. </b></h1>
                     </div>
                         <p class="mt-4" style="color: #151515; font-weight: 600;">As your HR solutions partner, JK Talent Solutions is devoted to providing the greatest quality at the lowest possible cost to customers. We make the required investments in technology and processes to improve efficiency at all levels.</p>
                         <p style="color: #151515; font-weight: 600;">JK Talent Solutions prioritizes you and your workers and offers an uncompromised experience.</p>
                         <div class="row text-lg-left text-left  ">
-                            <div class="col-lg-4 my-2">
+                            <div class="col-lg-4 my-2 ">
                                 <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Efficiency</p>
                                 <p style="font-weight: 600;" > <img src="./images/tick.png" alt=""> Innovation</p>
                             </div>
@@ -323,8 +347,8 @@
                     <img class="img-fluid" src="./images/flow 1.png" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <h3 class="fw-bold text-center text-lg-start" style="color: #FF0000;">About Us</h3>
-                    <p class="text-center text-lg-start" style="font-weight: 600;">We are one of the top providers of integrated facilities management
+                    <h3 class="fw-bold text-left" style="color: #FF0000;">About Us</h3>
+                    <p class="" style="font-weight: 600;">We are one of the top providers of integrated facilities management
                         services in India, specializing in the fields of healthcare, education,
                         public administration (including state, local, and federal agencies), 
                         airports, trains, metro infrastructure, and retail. We are one of the
@@ -332,7 +356,7 @@
                         serves nearly every end-user segment since we offer an extensive
                         array of integrated facilities management services across several 
                         industries.</p>
-                       <div class="text-center text-lg-start">
+                       <div class="text-left text-lg-start">
                        <button class="p-2 " style="border: none; background-color: #C80036;color: white;">View More</button>
 
                        </div>
@@ -442,8 +466,8 @@
                                         <img class="img-fluid " src="./images/sector logo/sector logo 1.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start text-center" style="color: #FF0000;">IT ( Information Technology )</h5>
-                                        <p class="text-lg-start text-center" style="color: #1A2130; font-weight: 600;">
+                                        <h5 class="fw-bold" style="color: #FF0000;">IT ( Information Technology )</h5>
+                                        <p class=" text-left ms-2 ms-lg-0" style="color: #1A2130; font-weight: 600;">
                                             Our company specializes in providing cutting-edge Information Technology solutions tailored to meet diverse business needs.
                                         </p>
                                     </div>
@@ -451,26 +475,26 @@
                                 </div>
                                 
                             </div>
-                            <div class="col-12 col-lg-4 text-center my-3">
+                            <div class="col-12 col-lg-4  my-3">
                                 <div class="row align-items-center justify-content-center">
                                     <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 2.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hospitals</h5>
-                                        <p class="text-lg-start"  style="color: #1A2130;font-weight: 600;">In this industry, we offer services to hospitals 
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Hospitals</h5>
+                                        <p class="text-lg-start ms-2 ms-lg-0"  style="color: #1A2130;font-weight: 600;">In this industry, we offer services to hospitals 
                                             and medical facilities.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 text-center mt-3">
+                            <div class="col-12 col-lg-4  mt-3">
                                 <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 3.png" alt="">
                                     </div>
                                     <div class="col-12  col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Education</h5>
-                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We offer our services to government officials, private and public schools, electricity boards, and district consumer forums.</p>
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Education</h5>
+                                        <p class="text-lg-start ms-3 ms-lg-0" style="color: #1A2130; font-weight: 600;">We offer our services to government officials, private and public schools, electricity boards, and district consumer forums.</p>
                                     </div>
                                 </div>
                             </div>
@@ -478,36 +502,36 @@
                         </div>
                         <div class="row  ">
                            
-                            <div class="col-12 col-lg-4 text-center mb-4">
+                            <div class="col-12 col-lg-4  mb-4">
                                 <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 4.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">BPO (Business Process Outsourcing)</h5>
-                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">Our company specializes in BPO services, offering efficient outsourcing solutions for various business processes.</p>
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">BPO (Business Process Outsourcing)</h5>
+                                        <p class="text-lg-start ms-lg-0 ms-3" style="color: #1A2130; font-weight: 600;">Our company specializes in BPO services, offering efficient outsourcing solutions for various business processes.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 text-center mb-4">
+                            <div class="col-12 col-lg-4  mb-4">
                                 <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 5.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Banking and Financial Services</h5>
-                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We work with branches in the financial services and banking industries.</p>
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Banking and Financial Services</h5>
+                                        <p class="text-lg-start ms-4 ms-lg-0" style="color: #1A2130; font-weight: 600;">We work with branches in the financial services and banking industries.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 text-center ">
+                            <div class="col-12 col-lg-4  ">
                                 <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 6.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Public Administration</h5>
-                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We provide our services to state, local, and government officials as well as to district and power board consumer forums.</p>
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Public Administration</h5>
+                                        <p class="text-lg-start ms-4 ms-lg-0" style="color: #1A2130; font-weight: 600;">We provide our services to state, local, and government officials as well as to district and power board consumer forums.</p>
                                     </div>
                                 </div>
                             </div>
@@ -516,37 +540,37 @@
                         </div>
 
                         <div class="row my-3">
-                            <div class="col-12 col-lg-4 text-center mb-4">
+                            <div class="col-12 col-lg-4  mb-4">
                                 <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 7.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Hotels</h5>
-                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">In this industry, we offer services to hospitals 
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Hotels</h5>
+                                        <p class="text-lg-start ms-3 ms-lg-0" style="color: #1A2130; font-weight: 600;">In this industry, we offer services to hospitals 
                                             and medical facilities.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 text-center mb-4">
+                            <div class="col-12 col-lg-4  mb-4">
                                 <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 8.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Airport</h5>
-                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We offer our services in metro stations, train stations, and airports.</p>
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Airport</h5>
+                                        <p class="text-lg-start ms-4 ms-lg-0" style="color: #1A2130; font-weight: 600;">We offer our services in metro stations, train stations, and airports.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4 text-center">
+                            <div class="col-12 col-lg-4 ">
                                 <div class="row align-items-center justify-content-center my-3">
-                                    <div class="col-12 col-lg-2">
+                                    <div class="col-12 col-lg-2 text-center">
                                         <img class="img-fluid" src="./images/sector logo/sector logo 9.png" alt="">
                                     </div>
                                     <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-start" style="color: #FF0000;">Industrial</h5>
-                                        <p class="text-lg-start" style="color: #1A2130; font-weight: 600;">We work with manufacturing companies, offering our services.</p>
+                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Industrial</h5>
+                                        <p class="text-lg-start ms-3 ms-lg-0" style="color: #1A2130; font-weight: 600;">We work with manufacturing companies, offering our services.</p>
                                     </div>
                                 </div>
                             </div>
@@ -644,37 +668,37 @@
             <h2 class="fw-bold mb-4" style="color: #FF0000;">Benefits Of Integrated Services Provided By JK Talent Solutions</h2>
           <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4 text-center my-3">
+                <div class="col-12 col-lg-4 my-3">
                         <img src="./images/benefits/benefits 1.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >All-encompassing Method</h5>
-                        <p style="font-weight: 600;" class="text-lg-start">The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                        <p style="font-weight: 600;" class="text-left ms-2 ms-lg-0">The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
                 </div>
-                <div class="col-12 col-lg-4 text-center my-3">
+                <div class="col-12 col-lg-4  my-3">
                         <img src="./images/benefits/benefits 2.png" alt="">
-                        <h5 class="fw-bold" style="color: #FF0000;" >personalized remedy</h5>
-                        <p style="font-weight: 600;" class="text-lg-start" >At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                        <h5 class="fw-bold" style="color: #FF0000;" >Personalized remedy</h5>
+                        <p style="font-weight: 600;" class="text-lg-start text-left ms-4 ms-lg-0" >At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 3.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Experience and Experts</h5>
-                        <p style="font-weight: 600;" class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                        <p style="font-weight: 600;" class="text-lg-start text-left ms-3 ms-lg-4">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 4.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Cost Savings</h5>
-                        <p style="font-weight: 600;" class="text-lg-start" >The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
+                        <p style="font-weight: 600;" class="text-lg-start text-left ms-3 ms-lg-0" >The Comprehensive Approach seeks to create structures and conditions that promote mutual understanding, cooperation, and communication both horizontally and vertically between states and international organizations.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 5.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Real-Time Monitoring &
                             Reporting</h5>
-                        <p style="font-weight: 600;" class="text-lg-start">At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
+                        <p style="font-weight: 600;" class="text-lg-start text-left ms-3 ms-lg-0">At Management Systems involves selecting tools to meet client needs, packaging them effectively, and ensuring seamless delivery and implementation.</p>
                 </div>
                 <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 6.png" alt="">
                         <h5 class="fw-bold" style="color: #FF0000;" >Access to specialized
                             services </h5>
-                        <p style="font-weight: 600;" class="text-lg-start">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
+                        <p style="font-weight: 600;" class="text-lg-start text-left ms-3 ms-lg-0">Content expertise is the mastery of a discipline's knowledge, abilities, and methodologies. It empowers graduate students to generate new scholarly knowledge through their endeavors.</p>
                 </div>
               
               </div>
@@ -768,10 +792,17 @@
                         <div class="contact-info">
                             <p><i class="fas fa-envelope"></i> hr@JKtalentsolutions.com</p>
                             <p><i class="fas fa-phone"></i> 8807880764, 8438438413</p>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                            <div class="row">
+                                <div class="col-1 col-lg-12"></div>
+                                <div class="col-10 col-lg-12">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p> Annai, Parvathi Nagar, opp.to Collector Office, Vengikkal, Tiruvannamalai, Tamilnadu 606604</p>
+                                    </div>
+                                </div>
+                                <div class="col-1 col-lg-12"></div>
                             </div>
+                           
                   
                         </div>
                     </div>

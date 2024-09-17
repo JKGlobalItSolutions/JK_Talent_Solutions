@@ -6,6 +6,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="./images/jk fevicon.png" type="image/png">
+
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -440,6 +442,61 @@
                 }
             </style>
         </div>
+        <div  class="scrolls-container facility my-5 ">
+            <h4 style="font-size: 35px;" class="text-center mb-5">
+                <b style="font-weight: 800;">Training & Development</b>
+            </h4>
+        
+            <div class="faility">
+                <div style="margin-left: 500px;" class="faility-content ms-5">
+                    <img src="./images/Chaithanya Logo.png" alt="Image 1">
+                    <img src="./images/chezhian college logo.jpeg" alt="Image 2">
+                   
+                    <!-- Duplicate images to ensure seamless scrolling -->
+             
+                </div>
+            </div>
+        
+            <style>
+                .scrolls-container {
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                     /* Adjust based on your layout */
+                }
+        
+                .faility {
+                    display: flex; /* Align items horizontally */
+                    width: 100%;
+                    overflow: hidden; /* Hide overflowing content */
+                    position: relative;
+
+                }
+        
+                .faility-content {
+                    display: flex; /* Align items horizontally */
+                    white-space: nowrap; /* Ensure images stay on one line */
+                    animation: scroll 12s linear infinite; /* Apply scrolling animation */
+                }
+        
+                .faility img {
+                    height: 100px; /* Set the height of images */
+                    margin-right: 20px; /* Space between images */
+                    vertical-align: middle; /* Align images vertically */
+                    margin-left: 200px;
+                }
+        
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0); /* Start with images in view */
+                    }
+                    100% {
+                        transform: translateX(-50%); /* Move to the end of the scrolling area */
+                    }
+                }
+            </style>
+        </div>
+  
         
 
         <style>
@@ -498,7 +555,7 @@
             .footer {
                 background-color: #ff0000;
                 color: white;
-                padding: 40px 0;
+                padding: 40px 0 0 0;
             }
 
             .footer h5 {

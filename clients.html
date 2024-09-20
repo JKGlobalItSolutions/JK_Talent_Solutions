@@ -91,7 +91,7 @@
                                 <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
                                 <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
-                                <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
+                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
                             </ul>
                         </li>
                         <!-- <li class="nav-item dropdown">
@@ -574,7 +574,7 @@
                     /* Align items horizontally */
                     white-space: nowrap;
                     /* Ensure images stay on one line */
-                    animation: scroll 12s linear infinite;
+                    animation: scroll 32s linear infinite;
                     /* Apply scrolling animation */
                 }
 
@@ -606,50 +606,37 @@
      
 
 
-
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-
             .scroll-container {
                 width: 100%;
                 overflow: hidden;
             }
-
+        
             .scroll-content {
                 white-space: nowrap;
-                animation: scroll 18s linear infinite;
-                /* Adjust animation duration here */
+                animation: scroll 30s linear infinite; /* Slowed down to 60 seconds */
             }
-
+        
             .scroll-content img {
                 margin: 30px;
-                /* padding: 20px; */
-                width: 150px;
-                /* Adjust image size */
+                width: 150px; /* Adjust image size */
                 height: auto;
-                margin-right: var(--image-gap, 10px);
-                /* Adjustable gap between images */
+                margin-right: var(--image-gap, 10px); /* Adjustable gap between images */
                 border-radius: 5px;
-                /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
             }
-
+        
             @keyframes scroll {
                 0% {
                     transform: translateX(0);
                 }
-
+        
                 100% {
-                    transform: translateX(calc(-200px * 6));
+                    transform: translateX(calc(-200px * 6)); /* Adjust according to number of images */
                 }
-
-                /* Adjust according to number of images */
             }
         </style>
-
+        
+</style>
         <!-- content end -->
 
 

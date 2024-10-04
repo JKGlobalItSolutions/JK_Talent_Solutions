@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Beware of Fraud</title>
+</head>
+<body>
+
+    <div id="warning-message" class="sticky">
+        <p>⚠️ Beware of Fraud! Always verify before paying any money. ⚠️</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+#warning-message {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: relative; /* Default position */
+    z-index: 1000; /* To keep it on top */
+}
+
+.sticky {
+    position: sticky; /* Change this to 'fixed' if you want it to always stay at the top */
+    top: 0;
+    width: 100%;
+}
+
+
+</style>

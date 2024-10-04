@@ -155,11 +155,28 @@
                                 Development</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers*</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: white; background-color: #FF0000; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
                         </li>
+                        
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                const button = document.getElementById('blinkButton');
+                                
+                                setInterval(() => {
+                                    // Check the current background color
+                                    if (button.style.backgroundColor === 'red') {
+                                        button.style.backgroundColor = '#c43c51'; // Original color
+                                        button.style.color = 'white'; // Original text color
+                                    } else {
+                                        button.style.backgroundColor = 'red'; // Blink color
+                                        button.style.color = 'white'; // Blink text color
+                                    }
+                                }, 1000); // Change every 1 second
+                            });
+                        </script>
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="career.html">Career</a>
                         </li>

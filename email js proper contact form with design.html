@@ -1,65 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+        <!-- Bootstrap CSS v5.3.2 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
- \
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+            .php-email-form {
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                color: #6c757d;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .form-control {
+                border: 2px solid #dc3545; /* Red border color */
+            }
+            .form-control:focus {
+                border-color: #28a745; /* Green on focus */
+                box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Green glow */
+            }
+            button {
+                background-color: #dc3545; /* Red background */
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #28a745; /* Green on hover */
+            }
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .php-email-form {
+                    padding: 20px;
+                }
+            }
+            @media (max-width: 576px) {
+                .php-email-form {
+                    padding: 15px;
+                }
+                h2 {
+                    font-size: 24px;
+                }
+                button {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+
+            /* Toast positioning */
+            .toast-container {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 1055;
+            }
+        </style>
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
         <script type="text/javascript">
             (function () {
-                emailjs.init("M6dqwCLgJjGebewPx");
+                emailjs.init("Te-bPMim7TYh26FoX");
             })();
         </script>
     </head>
 
-
-     
+    <body>
+        <main class="container mt-5">
             <form id="myForm" class="php-email-form mx-auto col-lg-8 col-md-10" data-aos="fade-up" data-aos-delay="400">
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Name*" type="text" id="name" required>
-                </div>
-                <div class="text-center my-3">  
-                    <input class="py-3 col-11 rounded" placeholder="Qualification*" type="text"
-                        id="qualification" required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Email*" type="email" id="email" required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Mobile Number*" type="tel" id="mobileNumber"
-                        required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Experience in years*" type="text"
-                        id="experience" required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Job looking for*" type="text"
-                        id="jobLookingFor" required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Location*" type="text" id="location"
-                        required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Expected working timing*" type="text"
-                        id="workingTiming" required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Expected interview scheduled time*"
-                        type="text" id="interviewTime" required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Notice period (In Days)*" type="text"
-                        id="noticePeriod" required>
-                </div>
-                <div class="text-center my-3">
-                    <input class="py-3 col-11 rounded" placeholder="Gender*" type="text" id="gender" required>
-                </div>
-                <div class="text-center my-3">
-                    <textarea class="py-5 col-11 rounded" placeholder="Any other requirements*"
-                        id="requirements" required></textarea>
-                </div>
-                <div class="text-center my-3">
-                    <button class="py-2 px-3 fw-bolder" type="submit">Submit</button>
+                <h2>Contact Us</h2>
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required />
+                    </div>
+                    <div class="col-md-12">
+                        <input type="tel" name="phone" id="phone" maxlength="10" pattern="[0-9]{10}" class="form-control" placeholder="Phone Number" required />
+                    </div>
+                    <div class="col-md-12">
+                        <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="text-white fs-bolder"><b>Send Message</b></button>
+                    </div>
                 </div>
             </form>
 
@@ -83,6 +123,7 @@
                     </div>
                 </div>
             </div>
+        </main>
 
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -99,20 +140,12 @@
             function sendemail() {
                 var templateParams = {
                     name: document.getElementById("name").value,
-                    qualification: document.getElementById("qualification").value,
                     email: document.getElementById("email").value,
-                    mobileNumber: document.getElementById("mobileNumber").value,
-                    experience: document.getElementById("experience").value,
-                    jobLookingFor: document.getElementById("jobLookingFor").value,
-                    location: document.getElementById("location").value,
-                    workingTiming: document.getElementById("workingTiming").value,
-                    interviewTime: document.getElementById("interviewTime").value,
-                    noticePeriod: document.getElementById("noticePeriod").value,
-                    gender: document.getElementById("gender").value,
-                    requirements: document.getElementById("requirements").value,
+                    phone: document.getElementById("phone").value,
+                    message: document.getElementById("message").value,
                 };
 
-                emailjs.send("service_t7olq7i", "template_vlf7kwd", templateParams)
+                emailjs.send("service_evr0yl4", "template_y6x8r1q", templateParams)
                     .then(function(response) {
                         console.log("SUCCESS!", response.status, response.text);
                         showToast('success');
@@ -126,31 +159,15 @@
             function sendMessage() {
                 var phonenumber = "+1234567890"; // Your WhatsApp phone number
                 var name = encodeURIComponent(document.getElementById("name").value);
-                var qualification = encodeURIComponent(document.getElementById("qualification").value);
                 var email = encodeURIComponent(document.getElementById("email").value);
-                var mobileNumber = encodeURIComponent(document.getElementById("mobileNumber").value);
-                var experience = encodeURIComponent(document.getElementById("experience").value);
-                var jobLookingFor = encodeURIComponent(document.getElementById("jobLookingFor").value);
-                var location = encodeURIComponent(document.getElementById("location").value);
-                var workingTiming = encodeURIComponent(document.getElementById("workingTiming").value);
-                var interviewTime = encodeURIComponent(document.getElementById("interviewTime").value);
-                var noticePeriod = encodeURIComponent(document.getElementById("noticePeriod").value);
-                var gender = encodeURIComponent(document.getElementById("gender").value);
-                var requirements = encodeURIComponent(document.getElementById("requirements").value);
+                var phone = encodeURIComponent(document.getElementById("phone").value);
+                var message = encodeURIComponent(document.getElementById("message").value);
 
                 var url = "https://wa.me/" + phonenumber + "?text=" +
                     "Name: " + name + "%0a" +
-                    "Email: " + qualification + "%0a" +
-                    "Phone: " + email + "%0a" +
-                    "Message: " + mobileNumber + "%0a" +
-                    "Message: " + experience + "%0a" +
-                    "Message: " + jobLookingFor + "%0a" +
-                    "Message: " + location + "%0a" +
-                    "Message: " + workingTiming + "%0a" +
-                    "Message: " + interviewTime + "%0a" +
-                    "Message: " + noticePeriod + "%0a" +
-                    "Message: " + gender + "%0a" +
-                    "Message: " + requirements + "%0a" +
+                    "Email: " + email + "%0a" +
+                    "Phone: " + phone + "%0a" +
+                    "Message: " + message + "%0a" +
                     "This message is sent via the contact form on our website.";
 
                 window.open(url, '_blank').focus();
@@ -166,3 +183,5 @@
                 toastEl.show();
             }
         </script>
+    </body>
+</html>

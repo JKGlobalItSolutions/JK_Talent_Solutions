@@ -91,6 +91,8 @@
                                 <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
                                 <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                                <li><a class="dropdown-item" href="training.html">Training and Development</a>
+                                </li>
                                 <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
                             </ul>
                         </li>
@@ -153,23 +155,30 @@
                         </style>
 
 
-                        <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training
-                                &
-                                Development</a>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownServices" role="button">
+                                Our Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+
+                                <li><a class="dropdown-item" href="hrify.html">Hrify</a></li>
+                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
                                 Seekers*</a>
                         </li>
                         <li class="nav-item">
-                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                                class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
                         </li>
-                        
+
                         <script>
                             document.addEventListener("DOMContentLoaded", () => {
                                 const button = document.getElementById('blinkButton');
-                                
+
                                 setInterval(() => {
                                     // Check the current background color
                                     if (button.style.backgroundColor === 'red') {
@@ -386,8 +395,8 @@
                 <img src="./images/logo/global it logo.png" alt="Image 1">
                 <img src="./images/logo/chithra logo.png" alt="Image 1">
                 <img src="./images/logo/jk foods.png" alt="Image 1">
-              
-                
+
+
 
 
                 <!-- Repeat images for scrolling -->
@@ -623,7 +632,7 @@
         </div>
 
 
-     
+
 
 
         <style>
@@ -631,32 +640,36 @@
                 width: 100%;
                 overflow: hidden;
             }
-        
+
             .scroll-content {
                 white-space: nowrap;
-                animation: scroll 30s linear infinite; /* Slowed down to 60 seconds */
+                animation: scroll 30s linear infinite;
+                /* Slowed down to 60 seconds */
             }
-        
+
             .scroll-content img {
                 margin: 30px;
-                width: 150px; /* Adjust image size */
+                width: 150px;
+                /* Adjust image size */
                 height: auto;
-                margin-right: var(--image-gap, 10px); /* Adjustable gap between images */
+                margin-right: var(--image-gap, 10px);
+                /* Adjustable gap between images */
                 border-radius: 5px;
             }
-        
+
             @keyframes scroll {
                 0% {
                     transform: translateX(0);
                 }
-        
+
                 100% {
-                    transform: translateX(calc(-200px * 6)); /* Adjust according to number of images */
+                    transform: translateX(calc(-200px * 6));
+                    /* Adjust according to number of images */
                 }
             }
         </style>
-        
-</style>
+
+        </style>
         <!-- content end -->
 
 

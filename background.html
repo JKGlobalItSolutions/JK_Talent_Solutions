@@ -44,23 +44,23 @@
         <nav class="navbar navbar-expand-lg navbar-light py-4">
             <div class="container-fluid">
                 <!-- Logo for All Views -->
-            
 
-                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">  
+
+                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">
                     <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
                     <style>
                         /* Default style for larger screens */
                         .logs {
                             height: 55px;
                         }
-                        
+
                         /* Media query for mobile devices */
                         @media (max-width: 768px) {
                             .logs {
                                 height: 39px;
                             }
                         }
-                        </style>   
+                    </style>
                 </a>
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -75,7 +75,7 @@
                             <a style="color: #ff0000; font-weight: 600;" class="nav-link active" aria-current="page"
                                 href="index.html">Home</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
                         </li>
@@ -86,10 +86,12 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
                                 <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
-                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
+                                        Services</a></li>
                                 <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
                                 <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                                <li><a class="dropdown-item" href="training.html">Training and Development</a>
                             </ul>
                         </li>
                         <!-- <li class="nav-item dropdown">
@@ -151,21 +153,30 @@
                         </style>
 
 
-                        <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training &
-                                Development</a>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownServices" role="button">
+                                Our Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+
+                                <li><a class="dropdown-item" href="hrify.html">Hrify</a></li>
+                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers*</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
+                                Seekers*</a>
                         </li>
                         <li class="nav-item">
-                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                                class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
                         </li>
-                        
+
                         <script>
                             document.addEventListener("DOMContentLoaded", () => {
                                 const button = document.getElementById('blinkButton');
-                                
+
                                 setInterval(() => {
                                     // Check the current background color
                                     if (button.style.backgroundColor === 'red') {
@@ -183,68 +194,71 @@
                         </li>
 
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                                href="clients.html">Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                                href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-         <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-        .slider {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
+            .slider {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
 
-        .slides {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
+            .slides {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
 
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+            }
 
-        .slide img {
-            width: 100%;
-            display: block;
-        }
+            .slide img {
+                width: 100%;
+                display: block;
+            }
 
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
+            .nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1000;
+            }
 
-        .prev {
-            left: 10px;
-        }
+            .prev {
+                left: 10px;
+            }
 
-        .next {
-            right: 10px;
-        }
-    </style>
-</head>
-<body>
- 
-        
+            .next {
+                right: 10px;
+            }
+        </style>
+        </head>
 
-      
+        <body>
+
+
+
+
 
 
 
@@ -358,14 +372,20 @@
 
         <!-- Banner end -->
         <!-- content start -->
-    <img class="img-fluid" src="./images/background verification banner.png" alt="">
+        <img class="img-fluid" src="./images/background verification banner.png" alt="">
         <div class="container mb-4">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-8">
-            <h2 class="text-left  mb-2 mt-4" style="color: #ff0000;">Employee Background Check ( EBGC )</h2>
+                    <h2 class="text-left  mb-2 mt-4" style="color: #ff0000;">Employee Background Check ( EBGC )</h2>
 
                     <p>
-                        An Employee Background Check Service involves a comprehensive process of verifying a candidate's personal, professional, and educational history to ensure their suitability for a job role. This service typically includes validating identity, employment history, education credentials, criminal records, credit history, and reference checks. By conducting thorough background screenings, businesses can reduce hiring risks, ensure a safe and secure workplace and maintain organizational integrity. At JK Talent Solutions, we provide detailed and accurate background checks to help you make informed hiring decisions with confidence.
+                        An Employee Background Check Service involves a comprehensive process of verifying a candidate's
+                        personal, professional, and educational history to ensure their suitability for a job role. This
+                        service typically includes validating identity, employment history, education credentials,
+                        criminal records, credit history, and reference checks. By conducting thorough background
+                        screenings, businesses can reduce hiring risks, ensure a safe and secure workplace and maintain
+                        organizational integrity. At JK Talent Solutions, we provide detailed and accurate background
+                        checks to help you make informed hiring decisions with confidence.
                     </p>
                     <div class="d-flex align-items-center mb-3">
                         <img height="25px" src="./images/red ecl.png" alt="">
@@ -407,170 +427,200 @@
                         <img height="25px" src="./images/red ecl.png" alt="">
                         <h6 class="ms-2 fw-bolder">Global Sanctions and Watchlist Checks</h6>
                     </div>
-                  
+
                 </div>
                 <div class="col-12 col-lg-4">
                     <img class="img-fluid" src="./images/background image  5.png" alt="">
                 </div>
-             
+
             </div>
         </div>
 
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-4">
-                <img class="img-fluid" src="./images/backgound image 1.png" alt="">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
+                    <img class="img-fluid" src="./images/backgound image 1.png" alt="">
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h2 style="color: #FF0000;" class="fw-bolder">Applicant Background Check ( ABGC )</h2>
+                    <p>At JK Talent Solutions, we conduct comprehensive Applicant Background Checks to help you make
+                        informed hiring decisions with confidence. Our meticulous verification process includes checking
+                        an applicant's identity, criminal records, employment history, education credentials and
+                        references as well as assessing their digital footprint and financial reliability where
+                        applicable. By thoroughly examining these details, we ensure that every candidate aligns with
+                        your organization's standards of trustworthiness, competency, and integrity with our expert
+                        background checks, you can reduce hiring risks, foster a secure workplace, and maintain your
+                        company’s reputation for excellence.</p>
+                </div>
             </div>
-            <div class="col-12 col-lg-8">
-              <h2 style="color: #FF0000;" class="fw-bolder">Applicant Background Check ( ABGC )</h2>
-              <p>At JK Talent Solutions, we conduct comprehensive Applicant Background Checks to help you make informed hiring decisions with confidence. Our meticulous verification process includes checking an applicant's identity, criminal records, employment history, education credentials and references as well as assessing their digital footprint and financial reliability where applicable. By thoroughly examining these details, we ensure that every candidate aligns with your organization's standards of trustworthiness, competency, and integrity with our expert background checks, you can reduce hiring risks, foster a secure workplace, and maintain your company’s reputation for excellence.</p>
-            </div>
-          </div>
         </div>
         <div class="container">
             <div style="gap: 40px
             ;" class="row">
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 1.png" alt="">
-                        <h6 class="text-center">Employment Address
-                            Verification</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 1.png" alt="">
+                    <h6 class="text-center">Employment Address
+                        Verification</h6>
                 </div>
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 2.png" alt="">
-                        <h6 class="text-center">Social Media
-                            Screening</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 2.png" alt="">
+                    <h6 class="text-center">Social Media
+                        Screening</h6>
                 </div>
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 3.png" alt="">
-                        <h6 class="text-center">Criminal/Court Records
-                            Verification</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 3.png" alt="">
+                    <h6 class="text-center">Criminal/Court Records
+                        Verification</h6>
                 </div>
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 4.png" alt="">
-                        <h6 class="text-center">Employment 
-                            Verification</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 4.png" alt="">
+                    <h6 class="text-center">Employment
+                        Verification</h6>
                 </div>
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 5.png" alt="">
-                        <h6 class="text-center">Professional Reference
-                            Verification</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 5.png" alt="">
+                    <h6 class="text-center">Professional Reference
+                        Verification</h6>
                 </div>
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 6.png" alt="">
-                        <h6 class="text-center">Global Database</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 6.png" alt="">
+                    <h6 class="text-center">Global Database</h6>
                 </div>
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 7.png" alt="">
-                        <h6 class="text-center">Education Verification</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 7.png" alt="">
+                    <h6 class="text-center">Education Verification</h6>
                 </div>
                 <div class="col-12 col-lg-2">
-                        <img class="img-fluid my-3" src="./images/emp logo 8.png" alt="">
-                        <h6 class="text-center">Drug Test</h6>
+                    <img class="img-fluid my-3" src="./images/emp logo 8.png" alt="">
+                    <h6 class="text-center">Drug Test</h6>
                 </div>
-              
-     
+
+
             </div>
         </div>
         <div class="container">
             <h1 style="color: #FF0000;" class="text-center fw-bolder">Why JK Talent Solutions ?</h1>
-        <p class="text-center">At JK Talent Solutions, we assist organizations with an accurate, reliable, and technology-driven background screening process that ensures the highest levels of compliance. Our services empower you to build strong, trustworthy relationships with prospective employees, bringing the essential trust and credibility needed for long-term success.</p>
-        <div class="row">
-            <div class="col-12 col-lg-3">
-               <p style="background-color: #FF0000;color: white;" class="px-2 py-3 justify-content-center rounded"> Background Verification
-                Features</p>
-            </div>
-            <div class="col-12 col-lg-3">
-               <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">Importance to Data
-                Privacy</p>
-            </div>
-            <div class="col-12 col-lg-3">
-               <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded"> Proven Track
-                Records</p>
-            </div>
-            <div class="col-12 col-lg-3">
-               <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">Technology /
-Automation</p>
-            </div>
-            
-        </div>
-        </div>
-        <div class="container">
-            <h2 style="color: #FF0000;" class="text-center mt-4 fw-bolder my-3">Identifying Risk The JK Talent Solutions Approach</h2>
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-4">
-                        <img class="img-fluid" src="./images/back img.png" alt="">
-                </div>
-                <div class="col-12 col-lg-8">
-                    <p>At JK Talent Solutions, we are a devoted team of background check experts with extensive industry experience. We offer comprehensive background verification solutions that meet both national and international requirements, providing thorough and reliable screening processes.</p>
-                    <p>Our services help employers save time and money by eliminating interviewer bias and ensuring an objective assessment of each candidate's status. Recognized as a top background verification provider, we deliver reliable and unbiased reports to support confident hiring decisions.</p>
-                    <p>With our smart and comprehensive background checks, JK Talent Solutions enables you to focus on what is most important: managing your organization's risk and making well-informed hiring decisions.</p>
-                    <p>Our team is always available to offer support, answer questions, and ensure that our services meet your expectations. With a focus on quality and client satisfaction, we aim to build long-term partnerships that add value to your organization.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <h2 style="color: #FF0000;" class="text-center fw-bolder my-3">why does background verification make sense?</h2>
+            <p class="text-center">At JK Talent Solutions, we assist organizations with an accurate, reliable, and
+                technology-driven background screening process that ensures the highest levels of compliance. Our
+                services empower you to build strong, trustworthy relationships with prospective employees, bringing the
+                essential trust and credibility needed for long-term success.</p>
             <div class="row">
                 <div class="col-12 col-lg-3">
-                   <p style="background-color: #FF0000;color: white;" class="px-3 py-3 justify-content-center rounded">Protects the company's 
-                    reputation</p>
+                    <p style="background-color: #FF0000;color: white;" class="px-2 py-3 justify-content-center rounded">
+                        Background Verification
+                        Features</p>
                 </div>
                 <div class="col-12 col-lg-3">
-                   <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">Mandatory by regulation 
-                    in some instances</p>
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Importance to Data
+                        Privacy</p>
                 </div>
                 <div class="col-12 col-lg-3">
-                   <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded"> Protect customers and 
-                    employees.
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Proven Track
+                        Records</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Technology /
+                        Automation</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <h2 style="color: #FF0000;" class="text-center mt-4 fw-bolder my-3">Identifying Risk The JK Talent Solutions
+                Approach</h2>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
+                    <img class="img-fluid" src="./images/back img.png" alt="">
+                </div>
+                <div class="col-12 col-lg-8">
+                    <p>At JK Talent Solutions, we are a devoted team of background check experts with extensive industry
+                        experience. We offer comprehensive background verification solutions that meet both national and
+                        international requirements, providing thorough and reliable screening processes.</p>
+                    <p>Our services help employers save time and money by eliminating interviewer bias and ensuring an
+                        objective assessment of each candidate's status. Recognized as a top background verification
+                        provider, we deliver reliable and unbiased reports to support confident hiring decisions.</p>
+                    <p>With our smart and comprehensive background checks, JK Talent Solutions enables you to focus on
+                        what is most important: managing your organization's risk and making well-informed hiring
+                        decisions.</p>
+                    <p>Our team is always available to offer support, answer questions, and ensure that our services
+                        meet your expectations. With a focus on quality and client satisfaction, we aim to build
+                        long-term partnerships that add value to your organization.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 style="color: #FF0000;" class="text-center fw-bolder my-3">why does background verification make sense?
+            </h2>
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <p style="background-color: #FF0000;color: white;" class="px-3 py-3 justify-content-center rounded">
+                        Protects the company's
+                        reputation</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Mandatory by regulation
+                        in some instances</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Protect customers and
+                        employees.
                     </p>
                 </div>
                 <div class="col-12 col-lg-3">
-                   <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">Improve overall quality 
-                    of hiring</p>
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Improve overall quality
+                        of hiring</p>
                 </div>
                 <div class="col-12 col-lg-3">
-                   <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">Prevent embezzlement/
-                    criminal acts.</p>
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Prevent embezzlement/
+                        criminal acts.</p>
                 </div>
                 <div class="col-12 col-lg-3">
-                   <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">Reduce overheads related 
-to constant hiring</p>
+                    <p style="background-color: #FF0000;color: white;" class="px-4 py-3 justify-content-center rounded">
+                        Reduce overheads related
+                        to constant hiring</p>
                 </div>
-                
+
             </div>
         </div>
         <div class="container my-3">
             <div class="row text-center justify-content-center align-items-center">
                 <div class="col-4 text-center">
-                  <a href="book.html">
-                    <button 
-                    style="
+                    <a href="book.html">
+                        <button style="
                       background-color: #ff0000;
                       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
                       border: none;
                       transition: all 0.3s ease;
-                    "
-                    class="text-center text-light py-2 rounded-pill fs-4 px-5 custom-button"
-                  >
-                    Book Your Service
-                  </button>
-                  </a>
-                  
-                  <style>
-                    .custom-button:hover {
-                      background-color: #e60000; /* Slightly darker red on hover */
-                      box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px; /* More intense shadow on hover */
-                      transform: scale(1.02); /* Slightly enlarges the button */
-                    }
-                  </style>
-                  
+                    " class="text-center text-light py-2 rounded-pill fs-4 px-5 custom-button">
+                            Book Your Service
+                        </button>
+                    </a>
+
+                    <style>
+                        .custom-button:hover {
+                            background-color: #e60000;
+                            /* Slightly darker red on hover */
+                            box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px;
+                            /* More intense shadow on hover */
+                            transform: scale(1.02);
+                            /* Slightly enlarges the button */
+                        }
+                    </style>
+
 
                 </div>
             </div>
         </div>
-    
-   
-      <!-- form end -->
+
+
+        <!-- form end -->
 
 
         <!-- content end -->

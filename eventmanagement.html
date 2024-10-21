@@ -91,6 +91,8 @@
                                 <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
                                 <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                                <li><a class="dropdown-item" href="training.html">Training and Development</a>
+                                </li>
                                 <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
                             </ul>
                         </li>
@@ -153,23 +155,30 @@
                         </style>
 
 
-                        <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training
-                                &
-                                Development</a>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownServices" role="button">
+                                Our Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+
+                                <li><a class="dropdown-item" href="hrify.html">Hrify</a></li>
+                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
                                 Seekers*</a>
                         </li>
                         <li class="nav-item">
-                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                                class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
                         </li>
-                        
+
                         <script>
                             document.addEventListener("DOMContentLoaded", () => {
                                 const button = document.getElementById('blinkButton');
-                                
+
                                 setInterval(() => {
                                     // Check the current background color
                                     if (button.style.backgroundColor === 'red') {
@@ -480,7 +489,7 @@
             </div>
 
         </div>
-    
+
 
         <!-- content end -->
 
@@ -488,28 +497,28 @@
         <div class="container my-3">
             <div class="row text-center justify-content-center align-items-center">
                 <div class="col-4 text-center">
-                  <a href="book.html">
-                    <button 
-                    style="
+                    <a href="book.html">
+                        <button style="
                       background-color: #ff0000;
                       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
                       border: none;
                       transition: all 0.3s ease;
-                    "
-                    class="text-center text-light py-2 rounded-pill fs-4 px-5 custom-button"
-                  >
-                    Book Your Service
-                  </button>
-                  </a>
-                  
-                  <style>
-                    .custom-button:hover {
-                      background-color: #e60000; /* Slightly darker red on hover */
-                      box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px; /* More intense shadow on hover */
-                      transform: scale(1.02); /* Slightly enlarges the button */
-                    }
-                  </style>
-                  
+                    " class="text-center text-light py-2 rounded-pill fs-4 px-5 custom-button">
+                            Book Your Service
+                        </button>
+                    </a>
+
+                    <style>
+                        .custom-button:hover {
+                            background-color: #e60000;
+                            /* Slightly darker red on hover */
+                            box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px;
+                            /* More intense shadow on hover */
+                            transform: scale(1.02);
+                            /* Slightly enlarges the button */
+                        }
+                    </style>
+
 
                 </div>
             </div>

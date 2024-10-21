@@ -42,23 +42,23 @@
         <nav class="navbar navbar-expand-lg navbar-light py-4">
             <div class="container-fluid">
                 <!-- Logo for All Views -->
-            
 
-                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">  
+
+                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">
                     <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
                     <style>
                         /* Default style for larger screens */
                         .logs {
                             height: 55px;
                         }
-                        
+
                         /* Media query for mobile devices */
                         @media (max-width: 768px) {
                             .logs {
                                 height: 39px;
                             }
                         }
-                        </style>   
+                    </style>
                 </a>
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -73,7 +73,7 @@
                             <a style="color: #000000; font-weight: 600;" class="nav-link active" aria-current="page"
                                 href="index.html">Home</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
                         </li>
@@ -84,10 +84,13 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
                                 <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
-                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
+                                        Services</a></li>
                                 <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
                                 <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                                <li><a class="dropdown-item" href="training.html">Training and Development</a>
+                                </li>
                                 <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
                             </ul>
                         </li>
@@ -150,21 +153,30 @@
                         </style>
 
 
-                        <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training &
-                                Development</a>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownServices" role="button">
+                                Our Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+
+                                <li><a class="dropdown-item" href="hrify.html">Hrify</a></li>
+                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers*</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
+                                Seekers*</a>
                         </li>
                         <li class="nav-item">
-                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                                class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
                         </li>
-                        
+
                         <script>
                             document.addEventListener("DOMContentLoaded", () => {
                                 const button = document.getElementById('blinkButton');
-                                
+
                                 setInterval(() => {
                                     // Check the current background color
                                     if (button.style.backgroundColor === 'red') {
@@ -181,149 +193,152 @@
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="career.html">Career</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                                href="clients.html">Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                                href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-         <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-        .slider {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
+            .slider {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
 
-        .slides {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
+            .slides {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
 
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+            }
 
-        .slide img {
-            width: 100%;
-            display: block;
-        }
+            .slide img {
+                width: 100%;
+                display: block;
+            }
 
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
+            .nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1000;
+            }
 
-        .prev {
-            left: 10px;
-        }
+            .prev {
+                left: 10px;
+            }
 
-        .next {
-            right: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="slider">
-        <div class="slides">
-            <!-- Duplicate slides to create seamless scrolling -->
-            <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
-            <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
-            <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div>
-            <div class="slide"><img src="./images/Banner 3.png" alt="Slide 4"></div>
-            <div class="slide"><img src="./images/Banner 6.png" alt="Slide 6"></div>
-            <!-- Duplicate slides again -->
-            <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
-            <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
-            <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div>
-            <div class="slide"><img src="./images/Banner 3.png" alt="Slide 4"></div>
-            <div class="slide"><img src="./images/Banner 6.png" alt="Slide 6"></div>
-        </div>
-        <button class="nav-button prev">&#10094;</button>
-        <button class="nav-button next">&#10095;</button>
-    </div>
+            .next {
+                right: 10px;
+            }
+        </style>
+        </head>
 
- <script>
-    const slides = document.querySelector('.slides');
-const slideCount = document.querySelectorAll('.slide').length;
-const slideWidth = 100; // Assuming each slide takes 100% width
-let currentIndex = 0;
-let slideInterval;
+        <body>
+            <div class="slider">
+                <div class="slides">
+                    <!-- Duplicate slides to create seamless scrolling -->
+                    <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
+                    <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
+                    <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div>
+                    <div class="slide"><img src="./images/Banner 3.png" alt="Slide 4"></div>
+                    <div class="slide"><img src="./images/Banner 6.png" alt="Slide 6"></div>
+                    <!-- Duplicate slides again -->
+                    <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
+                    <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
+                    <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div>
+                    <div class="slide"><img src="./images/Banner 3.png" alt="Slide 4"></div>
+                    <div class="slide"><img src="./images/Banner 6.png" alt="Slide 6"></div>
+                </div>
+                <button class="nav-button prev">&#10094;</button>
+                <button class="nav-button next">&#10095;</button>
+            </div>
 
-function goToSlide(index) {
-    slides.style.transition = 'transform 0.5s ease';
-    slides.style.transform = `translateX(-${index * slideWidth}%)`;
-    currentIndex = index;
+            <script>
+                const slides = document.querySelector('.slides');
+                const slideCount = document.querySelectorAll('.slide').length;
+                const slideWidth = 100; // Assuming each slide takes 100% width
+                let currentIndex = 0;
+                let slideInterval;
 
-    // When reaching the cloned slides, jump back to the start
-    if (index >= slideCount / 2) {
-        setTimeout(() => {
-            slides.style.transition = 'none';
-            slides.style.transform = 'translateX(0)';
-            currentIndex = 0;
-        }, 500); // Match this delay to the transition time
-    }
-}
+                function goToSlide(index) {
+                    slides.style.transition = 'transform 0.5s ease';
+                    slides.style.transform = `translateX(-${index * slideWidth}%)`;
+                    currentIndex = index;
 
-function nextSlide() {
-    goToSlide(currentIndex + 1);
-}
+                    // When reaching the cloned slides, jump back to the start
+                    if (index >= slideCount / 2) {
+                        setTimeout(() => {
+                            slides.style.transition = 'none';
+                            slides.style.transform = 'translateX(0)';
+                            currentIndex = 0;
+                        }, 500); // Match this delay to the transition time
+                    }
+                }
 
-function prevSlide() {
-    if (currentIndex > 0) {
-        goToSlide(currentIndex - 1);
-    } else {
-        slides.style.transition = 'none';
-        slides.style.transform = `translateX(-${(slideCount / 2 - 1) * slideWidth}%)`;
-        currentIndex = slideCount / 2 - 1;
-        setTimeout(() => {
-            slides.style.transition = 'transform 0.5s ease';
-            goToSlide(currentIndex - 1);
-        }, 0);
-    }
-}
+                function nextSlide() {
+                    goToSlide(currentIndex + 1);
+                }
 
-function startSlideShow() {
-    slideInterval = setInterval(nextSlide, 3000); // Change slides every 3 seconds
-}
+                function prevSlide() {
+                    if (currentIndex > 0) {
+                        goToSlide(currentIndex - 1);
+                    } else {
+                        slides.style.transition = 'none';
+                        slides.style.transform = `translateX(-${(slideCount / 2 - 1) * slideWidth}%)`;
+                        currentIndex = slideCount / 2 - 1;
+                        setTimeout(() => {
+                            slides.style.transition = 'transform 0.5s ease';
+                            goToSlide(currentIndex - 1);
+                        }, 0);
+                    }
+                }
 
-function stopSlideShow() {
-    clearInterval(slideInterval);
-}
+                function startSlideShow() {
+                    slideInterval = setInterval(nextSlide, 3000); // Change slides every 3 seconds
+                }
 
-document.querySelector('.next').addEventListener('click', () => {
-    nextSlide();
-    stopSlideShow();
-    startSlideShow();
-});
+                function stopSlideShow() {
+                    clearInterval(slideInterval);
+                }
 
-document.querySelector('.prev').addEventListener('click', () => {
-    prevSlide();
-    stopSlideShow();
-    startSlideShow();
-});
+                document.querySelector('.next').addEventListener('click', () => {
+                    nextSlide();
+                    stopSlideShow();
+                    startSlideShow();
+                });
 
-startSlideShow();
+                document.querySelector('.prev').addEventListener('click', () => {
+                    prevSlide();
+                    stopSlideShow();
+                    startSlideShow();
+                });
 
- </script>
-        
+                startSlideShow();
 
-      
+            </script>
+
+
+
 
 
 
@@ -437,18 +452,26 @@ startSlideShow();
 
         <!-- Banner end -->
         <!-- content start -->
-           <div class="container my-4">
+        <div class="container my-4">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-8">
-                    <h3  class="fw-bold" style="color: #FF0000;">IT ( Information Technology )</h3>
-                    <p style="font-weight: 500;">In IT (Information Technology), JK Talent Solutions provides a wide range of sector-specific services adapted to the technological requirements of various sectors. Our experience includes software development, network infrastructure management, cybersecurity solutions, and IT consulting. We serve organizations of all sizes, offering innovative IT solutions that increase operational efficiency, productivity, and connectivity. Whether developing custom software applications, maintaining robust IT infrastructure, implementing cybersecurity measures, or providing strategic IT advice, JK Talent Solutions is dedicated to providing dependable and scalable IT services that support our clients' growth and success in a variety of industries.</p>
-                   
+                    <h3 class="fw-bold" style="color: #FF0000;">IT ( Information Technology )</h3>
+                    <p style="font-weight: 500;">In IT (Information Technology), JK Talent Solutions provides a wide
+                        range of sector-specific services adapted to the technological requirements of various sectors.
+                        Our experience includes software development, network infrastructure management, cybersecurity
+                        solutions, and IT consulting. We serve organizations of all sizes, offering innovative IT
+                        solutions that increase operational efficiency, productivity, and connectivity. Whether
+                        developing custom software applications, maintaining robust IT infrastructure, implementing
+                        cybersecurity measures, or providing strategic IT advice, JK Talent Solutions is dedicated to
+                        providing dependable and scalable IT services that support our clients' growth and success in a
+                        variety of industries.</p>
+
                 </div>
                 <div class="col-12 col-lg-4">
                     <img class="img-fluid" src="./images/it.png" alt="">
                 </div>
             </div>
-           </div>
+        </div>
         <!-- content end -->
 
 
@@ -463,64 +486,84 @@ startSlideShow();
                 color: white;
                 padding: 40px 0 0 0;
             }
+
             .footer h5 {
                 margin-bottom: 10px;
                 font-size: 1.5em;
-                position: relative; /* Position relative for the pseudo-element */
-                padding-bottom: 10px; /* Space for the line */
+                position: relative;
+                /* Position relative for the pseudo-element */
+                padding-bottom: 10px;
+                /* Space for the line */
             }
+
             .footer h5::after {
                 content: "";
                 display: block;
-                width: 100%; /* Width of the line */
-                height: 1px; /* Thickness of the line */
+                width: 100%;
+                /* Width of the line */
+                height: 1px;
+                /* Thickness of the line */
                 background-color: white;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
-                transform: translateX(-50%); /* Center the line horizontally */
+                transform: translateX(-50%);
+                /* Center the line horizontally */
             }
+
             .footer hr {
                 border-top: 1px solid white;
-                width: 140px; /* Adjusted width */
-                margin: 10px auto 20px auto; /* Center the hr element */
+                width: 140px;
+                /* Adjusted width */
+                margin: 10px auto 20px auto;
+                /* Center the hr element */
             }
+
             .footer a {
                 color: white;
                 text-decoration: none;
             }
+
             .footer a:hover {
                 text-decoration: underline;
             }
+
             .footer .social-icons a {
                 margin: 0 10px;
                 font-size: 1.5em;
             }
+
             .footer .contact-info p {
                 margin: 5px 0;
             }
+
             .footer .contact-info i {
                 margin-right: 10px;
             }
+
             .footer .copyright {
                 margin-top: 20px;
                 text-align: center;
                 border-top: 1px solid white;
                 padding-top: 10px;
             }
+
             @media (max-width: 768px) {
                 .footer .row.text-center.text-md-left {
                     text-align: center;
                 }
-                .footer .row.text-center.text-md-left > div {
+
+                .footer .row.text-center.text-md-left>div {
                     margin-bottom: 20px;
                 }
+
                 .footer h5::after {
-                    width: 50%; /* Adjust width if necessary */
+                    width: 50%;
+                    /* Adjust width if necessary */
                 }
             }
         </style>
-        
+
         <div class="footer">
             <div class="container-fluid ">
                 <div class="row text-center text-md-left ms-lg-5 me-lg-5">
@@ -528,10 +571,18 @@ startSlideShow();
                         <h5>Connections</h5>
                         <hr>
                         <ul class="list-unstyled">
-                            <li><a href="index.html"><h6>Home</h6></a></li>
-                            <li><a href="career.html"><h6>Career</h6></a></li>
-                            <li><a href="about.html"><h6>About</h6></a></li>
-                            <li><a href="contact.html"><h6>Contact us</h6></a></li>
+                            <li><a href="index.html">
+                                    <h6>Home</h6>
+                                </a></li>
+                            <li><a href="career.html">
+                                    <h6>Career</h6>
+                                </a></li>
+                            <li><a href="about.html">
+                                    <h6>About</h6>
+                                </a></li>
+                            <li><a href="contact.html">
+                                    <h6>Contact us</h6>
+                                </a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
@@ -545,21 +596,24 @@ startSlideShow();
                                 <div class="col-10 col-lg-12">
                                     <div class="d-flex align-items-center">
                                         <i class="fas fa-map-marker-alt"></i>
-                                     <p>No,7, 4th street, shanmuganagar-2, Vengikkal, Tiruvannamalai, Tamil Nadu 606604
-                                    </p>
+                                        <p>No,7, 4th street, shanmuganagar-2, Vengikkal, Tiruvannamalai, Tamil Nadu
+                                            606604
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-1 col-lg-12"></div>
                             </div>
-                           
-                  
+
+
                         </div>
                     </div>
                     <div class="col-md-4 text-center ">
                         <img src="./images/JK LOGO 2.png" alt="JK Talent Solutions Logo" class="img-fluid mb-3">
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/jktalentsolution_off"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/jktalentsolution_off"><i
+                                    class="fab fa-instagram"></i></a>
                             <a href="https://x.com/talent_jk47795"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.youtube.com/@JKTALENTSOLUTIONS-o4l"><i class="fab fa-youtube"></i></a>
                         </div>

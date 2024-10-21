@@ -44,23 +44,23 @@
         <nav class="navbar navbar-expand-lg navbar-light py-4">
             <div class="container-fluid">
                 <!-- Logo for All Views -->
-            
 
-                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">  
+
+                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">
                     <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
                     <style>
                         /* Default style for larger screens */
                         .logs {
                             height: 55px;
                         }
-                        
+
                         /* Media query for mobile devices */
                         @media (max-width: 768px) {
                             .logs {
                                 height: 39px;
                             }
                         }
-                        </style>   
+                    </style>
                 </a>
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -75,7 +75,7 @@
                             <a style="color: #ff0000; font-weight: 600;" class="nav-link active" aria-current="page"
                                 href="index.html">Home</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
                         </li>
@@ -86,10 +86,12 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
                                 <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
-                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
+                                        Services</a></li>
                                 <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
                                 <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                                <li><a class="dropdown-item" href="training.html">Training & Development</a></li>
                                 <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
                             </ul>
                         </li>
@@ -152,21 +154,30 @@
                         </style>
 
 
-                        <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training &
-                                Development</a>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownServices" role="button">
+                                Our Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+
+                                <li><a class="dropdown-item" href="hrify.html">Hrify</a></li>
+                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers*</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
+                                Seekers*</a>
                         </li>
                         <li class="nav-item">
-                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                                class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
                         </li>
-                        
+
                         <script>
                             document.addEventListener("DOMContentLoaded", () => {
                                 const button = document.getElementById('blinkButton');
-                                
+
                                 setInterval(() => {
                                     // Check the current background color
                                     if (button.style.backgroundColor === 'red') {
@@ -183,70 +194,73 @@
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="career.html">Career</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                                href="clients.html">Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                                href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-         <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-        .slider {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
+            .slider {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
 
-        .slides {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
+            .slides {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
 
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+            }
 
-        .slide img {
-            width: 100%;
-            display: block;
-        }
+            .slide img {
+                width: 100%;
+                display: block;
+            }
 
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
+            .nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1000;
+            }
 
-        .prev {
-            left: 10px;
-        }
+            .prev {
+                left: 10px;
+            }
 
-        .next {
-            right: 10px;
-        }
-    </style>
-</head>
-<body>
-    
+            .next {
+                right: 10px;
+            }
+        </style>
+        </head>
+
+        <body>
 
 
-        
 
-      
+
+
+
 
 
 
@@ -360,14 +374,22 @@
 
         <!-- Banner end -->
         <!-- content start -->
-      <div class="container">
+        <div class="container">
             <div class="row align-items-center my-4">
                 <div class="col-12 col-lg-8">
                     <h3 style="color: #FF0000;" class="fw-bolder">Recruitment</h3>
                     <h5 class="fw-bold">PERMANENT STAFFING</h5>
-                    <p style="font-weight: 500;">We excel in executive search and staffing, dedicated to sourcing top-tier talent even for the most challenging roles. Our expertise lies in identifying and securing candidates with the precise skill sets needed to enhance your team. With proficiency across diverse industries, technologies, roles, and environments, we ensure optimal fits for your organization's needs.</p>
+                    <p style="font-weight: 500;">We excel in executive search and staffing, dedicated to sourcing
+                        top-tier talent even for the most challenging roles. Our expertise lies in identifying and
+                        securing candidates with the precise skill sets needed to enhance your team. With proficiency
+                        across diverse industries, technologies, roles, and environments, we ensure optimal fits for
+                        your organization's needs.</p>
                     <h5 class="fw-bold">CONTRACT STAFFING</h5>
-                    <p style="font-weight: 500;">Looking for experienced staff for ongoing projects? Talent Logic's Contract-To-Hire solution provides a flexible way to hire skilled contract resources and seamlessly convert them to permanent employees, all without additional risk or cost. Our extensive database ensures access to a qualified workforce ready for deployment whenever you need them.</p>
+                    <p style="font-weight: 500;">Looking for experienced staff for ongoing projects? Talent Logic's
+                        Contract-To-Hire solution provides a flexible way to hire skilled contract resources and
+                        seamlessly convert them to permanent employees, all without additional risk or cost. Our
+                        extensive database ensures access to a qualified workforce ready for deployment whenever you
+                        need them.</p>
                 </div>
                 <div class="col-12 col-lg-4">
                     <img class="img-fluid" src="./images/compre 1.jpg" alt="">
@@ -380,26 +402,42 @@
                 <div class="col-12 col-lg-7">
                     <h3 class="fw-bold" style="color: #FF0000;">Employee Engagement Activities</h3>
                     <h5 style="font-weight: 700;">FUN ACTIVITIES</h6>
-                    <p style="font-weight: 500;">Most of us eventually reach adulthood, acquire jobs, and settle down. This is not a terrible thing. However, we frequently lose the ability to open up and have fun. We actually become less effective at work. When used correctly, play can be quite beneficial.</p>
-                    <h5 style="font-weight: 700;">TIME MANAGEMENT</h6>
-                    <p style="font-weight: 500;">"Time management entails efficiently planning and scheduling tasks to enhance productivity. You may accomplish more with less effort by prioritizing things and managing time properly, especially while under pressure. Poor time management not only affects productivity but also raises stress levels."</p>
-                    <h5 style="font-weight: 700;">STRESS MANAGEMENT</h6>
-                    <p style="font-weight: 500;">Everyone who has ever worked has experienced work-related stress at some point in their careers. Even if you enjoy your job, there are times when it might be stressful. In the short term, you may feel pressure to achieve a deadline or complete a difficult task. However, when professional stress becomes chronic, it may be overpowering — and detrimental to both physical and emotional health.</p>
+                        <p style="font-weight: 500;">Most of us eventually reach adulthood, acquire jobs, and settle
+                            down. This is not a terrible thing. However, we frequently lose the ability to open up and
+                            have fun. We actually become less effective at work. When used correctly, play can be quite
+                            beneficial.</p>
+                        <h5 style="font-weight: 700;">TIME MANAGEMENT</h6>
+                            <p style="font-weight: 500;">"Time management entails efficiently planning and scheduling
+                                tasks to enhance productivity. You may accomplish more with less effort by prioritizing
+                                things and managing time properly, especially while under pressure. Poor time management
+                                not only affects productivity but also raises stress levels."</p>
+                            <h5 style="font-weight: 700;">STRESS MANAGEMENT</h6>
+                                <p style="font-weight: 500;">Everyone who has ever worked has experienced work-related
+                                    stress at some point in their careers. Even if you enjoy your job, there are times
+                                    when it might be stressful. In the short term, you may feel pressure to achieve a
+                                    deadline or complete a difficult task. However, when professional stress becomes
+                                    chronic, it may be overpowering — and detrimental to both physical and emotional
+                                    health.</p>
                 </div>
             </div>
             <div class="row my-3 align-items-center">
                 <div class="col-12 col-lg-8">
                     <h3 style="color: #FF0000;" class="fw-bold">Payroll Services</h3>
-                    <p style="font-weight: 500;">Avoid fines, penalties, and problems. Attempting to conduct payroll on your own for your small business may result in IRS penalties and fines, late tax files, and dissatisfied employees. Payroll services allow you to just enter your employees' basic hours and wages, while files, calculations, forms, and other difficulties are handled for you.</p>
-                    <p style="font-weight: 500;" >When you pay a W-2 employee, you owe a percentage of their earnings to federal, state, and local tax authorities. You must also pay the same amount in Social Security and Medicare taxes that they do, as well as FUTA (Federal Unemployment Tax Act) and SUI. </p>
+                    <p style="font-weight: 500;">Avoid fines, penalties, and problems. Attempting to conduct payroll on
+                        your own for your small business may result in IRS penalties and fines, late tax files, and
+                        dissatisfied employees. Payroll services allow you to just enter your employees' basic hours and
+                        wages, while files, calculations, forms, and other difficulties are handled for you.</p>
+                    <p style="font-weight: 500;">When you pay a W-2 employee, you owe a percentage of their earnings to
+                        federal, state, and local tax authorities. You must also pay the same amount in Social Security
+                        and Medicare taxes that they do, as well as FUTA (Federal Unemployment Tax Act) and SUI. </p>
                 </div>
                 <div class="col-12 col-lg-4">
                     <img class="img-fluid" src="./images/compre 3.png" alt="">
                 </div>
             </div>
-      </div>
+        </div>
         <!-- content end -->
-         <div class="container">
+        <div class="container">
             <h1 style="color: #FF0000;" class="text-center fw-bolder">Clients</h1>
             <div class="row align-items-center justify-content-center">
                 <div class="col-3 col-lg-2 me-0 me-lg-3">
@@ -415,8 +453,8 @@
                     <img class="img-fluid" src="./images/dprs logo.png" alt="">
                 </div>
             </div>
-         </div>
-       
+        </div>
+
 
 
 
@@ -425,28 +463,28 @@
     <div class="container my-3">
         <div class="row text-center justify-content-center align-items-center">
             <div class="col-4 text-center">
-              <a href="book.html">
-                <button 
-                style="
+                <a href="book.html">
+                    <button style="
                   background-color: #ff0000;
                   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
                   border: none;
                   transition: all 0.3s ease;
-                "
-                class="text-center text-light py-2 rounded-pill fs-4 px-5 custom-button"
-              >
-                Book Your Service
-              </button>
-              </a>
-              
-              <style>
-                .custom-button:hover {
-                  background-color: #e60000; /* Slightly darker red on hover */
-                  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px; /* More intense shadow on hover */
-                  transform: scale(1.02); /* Slightly enlarges the button */
-                }
-              </style>
-              
+                " class="text-center text-light py-2 rounded-pill fs-4 px-5 custom-button">
+                        Book Your Service
+                    </button>
+                </a>
+
+                <style>
+                    .custom-button:hover {
+                        background-color: #e60000;
+                        /* Slightly darker red on hover */
+                        box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px;
+                        /* More intense shadow on hover */
+                        transform: scale(1.02);
+                        /* Slightly enlarges the button */
+                    }
+                </style>
+
 
             </div>
         </div>
@@ -458,64 +496,84 @@
                 color: white;
                 padding: 40px 0 0 0;
             }
+
             .footer h5 {
                 margin-bottom: 10px;
                 font-size: 1.5em;
-                position: relative; /* Position relative for the pseudo-element */
-                padding-bottom: 10px; /* Space for the line */
+                position: relative;
+                /* Position relative for the pseudo-element */
+                padding-bottom: 10px;
+                /* Space for the line */
             }
+
             .footer h5::after {
                 content: "";
                 display: block;
-                width: 100%; /* Width of the line */
-                height: 1px; /* Thickness of the line */
+                width: 100%;
+                /* Width of the line */
+                height: 1px;
+                /* Thickness of the line */
                 background-color: white;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
-                transform: translateX(-50%); /* Center the line horizontally */
+                transform: translateX(-50%);
+                /* Center the line horizontally */
             }
+
             .footer hr {
                 border-top: 1px solid white;
-                width: 140px; /* Adjusted width */
-                margin: 10px auto 20px auto; /* Center the hr element */
+                width: 140px;
+                /* Adjusted width */
+                margin: 10px auto 20px auto;
+                /* Center the hr element */
             }
+
             .footer a {
                 color: white;
                 text-decoration: none;
             }
+
             .footer a:hover {
                 text-decoration: underline;
             }
+
             .footer .social-icons a {
                 margin: 0 10px;
                 font-size: 1.5em;
             }
+
             .footer .contact-info p {
                 margin: 5px 0;
             }
+
             .footer .contact-info i {
                 margin-right: 10px;
             }
+
             .footer .copyright {
                 margin-top: 20px;
                 text-align: center;
                 border-top: 1px solid white;
                 padding-top: 10px;
             }
+
             @media (max-width: 768px) {
                 .footer .row.text-center.text-md-left {
                     text-align: center;
                 }
-                .footer .row.text-center.text-md-left > div {
+
+                .footer .row.text-center.text-md-left>div {
                     margin-bottom: 20px;
                 }
+
                 .footer h5::after {
-                    width: 50%; /* Adjust width if necessary */
+                    width: 50%;
+                    /* Adjust width if necessary */
                 }
             }
         </style>
-        
+
         <div class="footer">
             <div class="container-fluid ">
                 <div class="row text-center text-md-left ms-lg-5 me-lg-5">
@@ -523,10 +581,18 @@
                         <h5>Connections</h5>
                         <hr>
                         <ul class="list-unstyled">
-                            <li><a href="index.html"><h6>Home</h6></a></li>
-                            <li><a href="career.html"><h6>Career</h6></a></li>
-                            <li><a href="about.html"><h6>About</h6></a></li>
-                            <li><a href="contact.html"><h6>Contact us</h6></a></li>
+                            <li><a href="index.html">
+                                    <h6>Home</h6>
+                                </a></li>
+                            <li><a href="career.html">
+                                    <h6>Career</h6>
+                                </a></li>
+                            <li><a href="about.html">
+                                    <h6>About</h6>
+                                </a></li>
+                            <li><a href="contact.html">
+                                    <h6>Contact us</h6>
+                                </a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
@@ -540,21 +606,25 @@
                                 <div class="col-10 col-lg-12">
                                     <div class="d-flex align-items-center">
                                         <i class="fas fa-map-marker-alt"></i>
-                                     <p>No,7, 4th street, shanmuganagar-2, Vengikkal, Tiruvannamalai, Tamil Nadu 606604
-                                    </p>
+                                        <p>No,7, 4th street, shanmuganagar-2, Vengikkal, Tiruvannamalai, Tamil Nadu
+                                            606604
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-1 col-lg-12"></div>
                             </div>
-                           
-                  
+
+
                         </div>
                     </div>
                     <div class="col-md-4 text-center ">
-                        <img src="./images/footer-custom-logo.png" alt="JK Talent Solutions Logo" class="img-fluid mb-3">
+                        <img src="./images/footer-custom-logo.png" alt="JK Talent Solutions Logo"
+                            class="img-fluid mb-3">
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/jktalentsolution_off"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/jktalentsolution_off"><i
+                                    class="fab fa-instagram"></i></a>
                             <a href="https://x.com/talent_jk47795"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.youtube.com/@JKTALENTSOLUTIONS-o4l"><i class="fab fa-youtube"></i></a>
                         </div>

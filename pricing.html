@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JK Talent Solution</title>
+    <link rel="icon" href="./images/jk fevicon.png" type="image/png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./components/includescript.js"></script>
+
+    <style>
+        .nav-tabs .nav-link {
+            border: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #ff0000;
+
+            color: white;
+            border-radius: 10px;
+        }
+
+        .category-nav {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 15px;
+        }
+
+        .category-nav button {
+            background-color: #d3d3d3;
+            border: 2px solid #ff0000;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 10px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .category-nav .active {
+            background-color: black;
+            color: white;
+        }
+
+        /* Make category navigation scrollable on mobile */
+        .category-nav-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            /* Hide scrollbar for Firefox */
+        }
+
+        .category-nav-container::-webkit-scrollbar {
+            display: none;
+            /* Hide scrollbar for Chrome, Safari */
+        }
+
+        .category-nav {
+            display: inline-flex;
+            width: max-content;
+            /* Prevent wrapping */
+        }
+
+        .category-nav button {
+            flex-shrink: 0;
+            /* Prevent buttons from shrinking */
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+        }
+
+        .pricing-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .pricing-header img {
+            width: 200px;
+            height: auto;
+        }
+
+        .pricing-subtext {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: gray;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .responsive-image-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Form styles */
+        .form-container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            padding: 40px !important;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .form-label {
+            color: #ff0000;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 12px;
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .form-control:focus {
+            border-color: #0891B2;
+            box-shadow: 0 0 0 2px rgba(8, 145, 178, 0.1);
+        }
+
+        /* Custom select styling */
+        .custom-select-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .custom-select-wrapper::after {
+            content: '';
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-image: url('./assets/pricing/talentformdropdown.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            pointer-events: none;
+        }
+
+        .custom-select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+            padding: 12px 16px;
+            padding-right: 48px;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            background-color: white;
+            font-size: 16px;
+            color: #1F2937;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .custom-select:focus {
+            outline: none;
+            border-color: #0891B2;
+            box-shadow: 0 0 0 2px rgba(8, 145, 178, 0.1);
+        }
+
+        .custom-select::-ms-expand {
+            display: none;
+        }
+
+        .custom-select option {
+            padding: 12px;
+        }
+
+        .custom-select option[value=""][disabled] {
+            color: #94A3B8;
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+        }
+
+        .btn-quotation {
+            background: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 32px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .btn-quotation:hover {
+            background: #0E7490;
+        }
+
+        .form-footer-text {
+            text-align: center;
+            color: #94A3B8;
+            margin-top: 16px;
+            font-size: 14px;
+        }
+
+        @media (min-width: 1200px) {
+            .image-section img {
+                max-width: 800px;
+            }
+        }
+
+        .responsive-image-section img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+    </style>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light py-4">
+        <div class="container-fluid">
+            <!-- Logo for All Views -->
+
+
+            <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">
+                <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
+                <style>
+                    /* Default style for larger screens */
+                    .logs {
+                        height: 55px;
+                    }
+
+                    /* Media query for mobile devices */
+                    @media (max-width: 768px) {
+                        .logs {
+                            height: 39px;
+                        }
+                    }
+                </style>
+            </a>
+            <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-between w-100 ms-0 ms-lg-5 me-5">
+                    <li class="nav-item">
+                        <a style="color: #ff0000; font-weight: 600;" class="nav-link active" aria-current="page"
+                            href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdownServices" role="button">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+                            <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
+                            <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
+                                    Services</a></li>
+                            <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
+
+                            <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                            <li><a class="dropdown-item" href="training.html">Training and Development</a>
+                            </li>
+
+                            <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdownSectors" role="button">
+                            Sectors
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownSectors">
+                            <li><a class="dropdown-item" href="it.html">IT ( Information Technology )</a></li>
+                            <li><a class="dropdown-item" href="bpo.html">BPO ( Business Process Outsourcing )</a></li>
+                            <li><a class="dropdown-item" href="hotels.html">Hotels</a></li>
+                            <li><a class="dropdown-item" href="hospital.html">Hospitals And Healthcare</a></li>
+                            <li><a class="dropdown-item" href="education.html">Education</a></li>
+                            <li><a class="dropdown-item" href="banking.html">Banking And Financial Services</a></li>
+                            <li><a class="dropdown-item" href="public.html">Public Administration</a></li>
+                            <li><a class="dropdown-item" href="industrial.html">Industrial</a></li>
+                            <li><a class="dropdown-item" href="retail.html">Retail</a></li>
+                            <li><a class="dropdown-item" href="othersectors.html">Other Sectors</a></li>
+                          
+                        </ul>
+                    </li> -->
+                    <style>
+                        /* Hide the dropdown menu by default */
+                        .dropdown-menu-hover {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            z-index: 1000;
+                        }
+
+                        /* Show the dropdown menu when hovering over the parent item */
+                        .nav-item:hover .dropdown-menu-hover {
+                            display: block;
+                        }
+
+                        /* Additional styling to ensure the dropdown menu appears as needed */
+                        .nav-item {
+                            position: relative;
+                        }
+
+                        .dropdown-menu-hover {
+                            background-color: white;
+                            border: 1px solid #ddd;
+                            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                        }
+
+                        /* Style dropdown items as needed */
+                        .dropdown-item {
+                            color: #FF0000;
+                            font-weight: 600;
+                            text-decoration: none;
+                            padding: 8px 16px;
+                        }
+
+                        .dropdown-item:hover {
+                            background-color: #f8f9fa;
+                        }
+                    </style>
+
+
+
+                    <li class="nav-item">
+                        <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/pricing.html"
+                            id="navbarDropdownServices" role="button">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
+                            Seekers*</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                            class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                    </li>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const button = document.getElementById('blinkButton');
+
+                            setInterval(() => {
+                                // Check the current background color
+                                if (button.style.backgroundColor === 'red') {
+                                    button.style.backgroundColor = '#c43c51'; // Original color
+                                    button.style.color = 'white'; // Original text color
+                                } else {
+                                    button.style.backgroundColor = 'red'; // Blink color
+                                    button.style.color = 'white'; // Blink text color
+                                }
+                            }, 1000); // Change every 1 second
+                        });
+                    </script>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" style="color: #FF0000; font-weight: 600;"
+                            id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu  dropdown-menu-hover" aria-labelledby="careersDropdown">
+                            <li><a class="dropdown-item" href="/career.html">Careers</a></li>
+                            <li><a class="dropdown-item" href="/">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                            href="clients.html">Clients</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a style="color:#FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+    <style>
+        .pricing-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card-header {
+            background: linear-gradient(90deg, #B6374B 0%, #501821 100%);
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 15px 15px 0 0;
+            text-align: center;
+        }
+
+        .pricing-card-body {
+            padding: 20px;
+        }
+
+        .pricing-card-body ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pricing-card-body ul li {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .pricing-card-body ul li::before {
+            content: "✔";
+            color: #8b0000;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        .btn-quotation-pricing {
+            background: linear-gradient(90deg, #AE3448 0%, #48161E 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: 0.3s;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .btn-quotation-pricing:hover {
+            background: #b22222;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card {
+                margin: 0 10px 20px;
+            }
+        }
+
+
+
+        .btn-submit {
+            background: #b22222;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background: #b22222;
+        }
+
+
+
+
+
+
+
+
+
+        .facility-management-container {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .facility-management-container h2 {
+            color: #B6374B;
+            font-weight: bold;
+        }
+
+        .facility-management-container h4 {
+            color: #AE3448;
+            margin-bottom: 15px;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 8px 0;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .list-group-item::before {
+            content: "✔️ ";
+            color: #B6374B;
+        }
+    </style>
+
+
+
+
+
+
+    <div id="navbar-container"></div>
+
+
+    <div class="container mt-4">
+
+        <div class="pricing-subtext">
+            <h3 style="color: #FF0000;">Flexible Pricing For Your Business Needs</h3>
+            <p style="font-size: 16px;">Get the best value for professional staffing, facility management, and IT
+                solutions.</p>
+        </div>
+
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" onclick="showSection('pricing', event)">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('payroll_main', event)">Payroll</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('bg', event)">BG</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('fms', event)">FMS</a>
+            </li>
+        </ul>
+
+        <!--------------------------------- PRICING SECTION--------------------------------------->
+        <div id="pricing" class="active-section">
+
+            <!-- Category Buttons -->
+
+
+            <!-- Category Buttons -->
+            <div class="category-nav-container mb-4" style="
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+        width: 100%;
+    ">
+                <div class="category-nav" style="
+            flex: 1 1 200px; 
+            max-width: 300px;
+        ">
+                    <button onclick="changeCategory('commission', event)" style="
+                width: 100%;
+                padding: 12px 20px;
+                background-color: #B6374B; /* Default */
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            ">
+                        Based On Commission
+                    </button>
+                </div>
+
+                <div class="category-nav" style="
+            flex: 1 1 200px; 
+            max-width: 300px;
+        ">
+                    <button onclick="changeCategory('payroll', event)" style="
+                width: 100%;
+                padding: 12px 20px;
+                background-color: #B6374B; /* Default */
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            ">
+                        Based On Payroll
+                    </button>
+                </div>
+            </div>
+
+            <script>
+                function changeCategory(category, event) {
+                    const buttons = document.querySelectorAll('.category-nav button');
+
+                    buttons.forEach(btn => {
+                        btn.style.backgroundColor = '#B6374B'; // Reset color
+                    });
+
+                    // Set the active button's background color
+                    event.target.style.backgroundColor = '#AE3448'; // Active color
+                }
+            </script>
+
+
+
+
+            <!-- Commission Pricing Cards -->
+            <section id="product-section" class="container my-5" style="display: block;">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="pricing-card">
+                            <div class="pricing-card-header">SPEED 1.0</div>
+                            <div class="pricing-card-body">
+                                <ul>
+                                    <li>Advance Amount Per Candidate Per Job</li>
+                                    <li>Duration "14 days"</li>
+                                    <li>60 days replacement (T&C Apply)</li>
+                                    <li>Invoice generated once candidates onboard</li>
+                                    <li>Billing within 7 days</li>
+                                    <li>Employee Payroll calculated (T&C Apply)</li>
+                                </ul>
+                                <button class="btn btn-quotation-pricing">Get Quotation</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-card">
+                            <div class="pricing-card-header">SPEED 2.0</div>
+                            <div class="pricing-card-body">
+                                <ul>
+                                    <li>Advance Amount Per Candidate Per Job</li>
+                                    <li>Duration "7 days"</li>
+                                    <li>60 days replacement (T&C Apply)</li>
+                                    <li>Invoice generated once candidates onboard</li>
+                                    <li>Billing within 7 days</li>
+                                    <li>Employee Payroll calculated (T&C Apply)</li>
+                                </ul>
+                                <button class="btn btn-quotation-pricing">Get Quotation</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-card">
+                            <div class="pricing-card-header">SPEED 3.0</div>
+                            <div class="pricing-card-body">
+                                <ul>
+                                    <li>Advance Amount Per Candidate Per Job</li>
+                                    <li>Duration "5 days"</li>
+                                    <li>60 days replacement</li>
+                                    <li>Invoice generated once candidates onboard</li>
+                                    <li>Billing within 7 days</li>
+                                    <li>Employee Payroll calculated (T&C Apply)</li>
+                                </ul>
+                                <button class="btn btn-quotation-pricing">Get Quotation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Quotation Form (Commission) -->
+
+            <!--             
+            <div id="quotation-container" class="quotation-container" style="display: none;">
+                <div class="quotation-header text-center mb-4">
+                    <h3>Get the best hiring solution tailored to your needs.</h3>
+                    <p>Fill out the form, and our team will get back to you with a detailed quotation.</p>
+                </div>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6 "><label class="form-label">Full Name</label><input type="text"
+                                class="form-control border border-danger" required></div>
+
+                        <div class="col-md-6"><label class="form-label">Email Address</label><input type="email"
+                                class="form-control border border-danger" required></div>
+
+                        <div class="col-md-6"><label class="form-label">Phone Number</label><input type="tel"
+                                class="form-control border border-danger" required></div>
+
+                        <div class="col-md-6"><label class="form-label">Company Name</label><input type="text"
+                                class="form-control border border-danger" required></div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Select Your Preferred Plan</label>
+                            <select class="form-select border border-danger" required>
+                                <option disabled selected>Select a plan</option>
+                                <option>SPEED 1.0</option>
+                                <option>SPEED 2.0</option>
+                                <option>SPEED 3.0</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6"><label class="form-label">Number of Candidates Required</label><input
+                                type="number" class="form-control border border-danger" required></div>
+                        <div class="col-md-6"><label class="form-label">Job Role/Position</label><input type="text"
+                                class="form-control border border-danger" required></div>
+                        <div class="col-md-6"><label class="form-label">Expected Start Date</label><input type="date"
+                                class="form-control border border-danger" required></div>
+                        <div class="col-12"><label class="form-label">Specific Requirements/Notes</label><textarea
+                                class="form-control border border-danger" rows="3"></textarea></div>
+
+                        <div class="col-12 mb-2 text-center">
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div> -->
+
+
+            <style>
+                /* Popup Modal Styles */
+                .quotation-popup {
+                    display: none;
+                    /* Hidden by default */
+                    position: fixed;
+                    z-index: 1000;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    /* Overlay */
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .quotation-popup-content {
+                    background-color: #fff;
+                    padding: 30px;
+                    border-radius: 10px;
+                    max-width: 700px;
+                    width: 90%;
+                    position: relative;
+                    animation: popupFade 0.3s ease-in-out;
+                }
+
+                .quotation-close {
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    font-size: 28px;
+                    color: #333;
+                    cursor: pointer;
+                }
+
+                @keyframes popupFade {
+                    from {
+                        opacity: 0;
+                        transform: scale(0.9);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+
+                .btn-submit {
+                    background-color: #dc3545;
+                    color: white;
+                    border: none;
+                }
+
+                .btn-submit:hover {
+                    background-color: #c82333;
+                }
+            </style>
+
+
+
+            <!-- Quotation Form Popup Modal -->
+            <div id="quotation-popup" class="quotation-popup">
+                <div class="quotation-popup-content">
+                    <!-- Close button -->
+                    <span class="quotation-close">&times;</span>
+
+                    <!-- Form content -->
+                    <div class="quotation-header text-center mb-4">
+                        <h3>Get the best hiring solution tailored to your needs.</h3>
+                        <p>Fill out the form, and our team will get back to you with a detailed quotation.</p>
+                    </div>
+
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control border border-danger" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control border border-danger" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control border border-danger" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Company Name</label>
+                                <input type="text" class="form-control border border-danger" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Select Your Preferred Plan</label>
+                                <select class="form-select border border-danger" required>
+                                    <option disabled selected>Select a plan</option>
+                                    <option>SPEED 1.0</option>
+                                    <option>SPEED 2.0</option>
+                                    <option>SPEED 3.0</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Number of Candidates Required</label>
+                                <input type="number" class="form-control border border-danger" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Job Role/Position</label>
+                                <input type="text" class="form-control border border-danger" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Expected Start Date</label>
+                                <input type="date" class="form-control border border-danger" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Specific Requirements/Notes</label>
+                                <textarea class="form-control border border-danger" rows="3"></textarea>
+                            </div>
+
+                            <div class="col-12 mb-2 text-center">
+                                <button type="submit" class="btn btn-submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+    <!-- JavaScript for Popup Functionality -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Elements
+            const quotationPopup = document.getElementById("quotation-popup");
+            const closePopupBtn = document.querySelector(".quotation-close");
+            const quotationButtons = document.querySelectorAll(".btn-quotation-pricing");
+
+            // Open popup on button click
+            quotationButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    quotationPopup.style.display = "flex";
+                });
+            });
+
+            // Close popup on close button click
+            closePopupBtn.addEventListener("click", function () {
+                quotationPopup.style.display = "none";
+            });
+
+            // Optional: Close popup when clicking outside of the form content
+            window.addEventListener("click", function (e) {
+                if (e.target === quotationPopup) {
+                    quotationPopup.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+            <!-- Based on Payroll Form -->
+            <section id="based-payroll-form-section" class="container my-5" style="display: none;">
+                <div class="quotation-container">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6"><label class="form-label">Company Name</label><input type="text"
+                                    class="form-control border border-danger" required></div>
+
+                            <div class="col-md-6"><label class="form-label">Address</label><input type="text"
+                                    class="form-control border border-danger" required></div>
+
+                            <div class="col-md-6"><label class="form-label">Landline</label><input type="tel"
+                                    class="form-control border border-danger" required></div>
+                            <div class="col-md-6"><label class="form-label">Phone Number</label><input type="tel"
+                                    class="form-control border border-danger" required></div>
+                            <div class="col-md-6"><label class="form-label">Contact Person Name</label><input
+                                    type="text" class="form-control border border-danger" required></div>
+                            <div class="col-md-6"><label class="form-label">Number of Candidates Needed</label><input
+                                    type="number" class="form-control border border-danger" min="1" required></div>
+                            <div class="col-md-6"><label class="form-label">Job Role</label><input type="text"
+                                    class="form-control border border-danger" required></div>
+                            <div class="col-12"><label class="form-label">Job Description (if any)</label><textarea
+                                    class="form-control border border-danger" rows="3"></textarea></div>
+                            <div class="col-12">
+                                <div class="form-check"><input class="form-check-input border border-danger"
+                                        type="checkbox" id="urgentHiring"><label class="form-check-label "
+                                        for="urgentHiring">I agree for
+                                        payroll-based staffing</label></div>
+
+                                <div class="form-check mt-2"><input class="form-check-input border border-danger"
+                                        type="checkbox" id="payrollService"><label class="form-check-label"
+                                        for="payrollService">The
+                                        above information is true</label></div>
+                            </div>
+                            <div class="col-12 text-center"><button type="submit" class="btn btn-submit">Submit Payroll
+                                    Request</button></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- -----------------------------------------------------PAYROLL MAIN TAB CONTENT----------------------------------------------------- -->
+
+        <div id="payroll_main">
+            <div class="quotation-container container">
+                <h3 class="text-center mb-4">Payroll Service Request Form</h3>
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Company Name *</label>
+                            <input type="text" class="form-control border border-danger" required>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Contact Person *</label>
+                            <input type="text" class="form-control border border-danger" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-control border border-danger" required>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control border border-danger" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Number of Employees *</label>
+                            <input type="number" class="form-control border border-danger" required>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Payroll Frequency *</label>
+                            <select class="form-select border border-danger" required>
+                                <option value="">Select Frequency</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="bi-weekly">Bi-Weekly</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Payroll Start Date *</label>
+                            <input type="date" class="form-control border border-danger" required>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6">
+                            <label class="form-label">Additional Requirements / Notes</label>
+                            <textarea class="form-control border border-danger" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-12 col-md-6">
+                            <button type="submit" class="btn btn-submit w-100">Submit Request</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!--------------------------------------- BG  sections -------------------------------- -->
+
+
+        <div id="bg">
+
+            <!-- Background Verification Form -->
+            <div id="background-verification-container" class="verification-container" style="display: block;">
+                <div class="verification-header text-center mb-4">
+                    <h3>Background Verification Request</h3>
+                    <p>Please fill out the form below to initiate the verification process.</p>
+                </div>
+
+                <form>
+                    <div class="row g-3">
+                        <!-- Applicant Details -->
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control border border-danger" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control border border-danger" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control border border-danger" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control border border-danger" required>
+                        </div>
+
+                        <!-- Identity Information -->
+                        <div class="col-md-6">
+                            <label class="form-label">Government ID Type</label>
+                            <select class="form-select border border-danger" required>
+                                <option disabled selected>Select ID Type</option>
+                                <option>Aadhar Card</option>
+                                <option>PAN Card</option>
+                                <option>Passport</option>
+                                <option>Driver's License</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">ID Number</label>
+                            <input type="text" class="form-control border border-danger" required>
+                        </div>
+
+                        <!-- Address Details -->
+                        <div class="col-md-12">
+                            <label class="form-label">Current Address</label>
+                            <textarea class="form-control border border-danger" rows="3" required></textarea>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="form-label">Permanent Address</label>
+                            <textarea class="form-control border border-danger" rows="3"></textarea>
+                        </div>
+
+                        <!-- Additional Info -->
+                        <div class="col-md-6">
+                            <label class="form-label">Educational Qualification</label>
+                            <input type="text" class="form-control border border-danger" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Previous Employer (if any)</label>
+                            <input type="text" class="form-control border border-danger">
+                        </div>
+
+                        <div class="col-12 mb-2">
+                            <button type="submit" class="btn btn-submit">Submit Verification Request</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <!--------------------------------------- FMS  sections -------------------------------- -->
+
+        <style>
+            .facility-management-container {
+                background-color: #fff;
+                padding: 40px 20px;
+                border-radius: 12px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .facility-management-container h2 {
+                color: #B6374B;
+                font-weight: bold;
+            }
+
+            .btn-submit {
+                background-color: #B6374B;
+                color: #fff;
+                padding: 12px 30px;
+                border-radius: 8px;
+                font-size: 18px;
+                border: none;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn-submit:hover {
+                background-color: #AE3448;
+            }
+        </style>
+
+        <div id="fms" class="facility-management-container">
+            <!-- Facility Management Services Header -->
+            <div class="text-center mb-4">
+                <h2>Facility Management Services</h2>
+                <p>Comprehensive solutions tailored to meet your needs. Please fill out the form below!</p>
+            </div>
+
+            <!-- Facility Management Form -->
+            <form>
+                <div class="row g-3 justify-content-center">
+                    <!-- Full Name -->
+                    <div class="col-md-6">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control border border-danger" placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="col-md-6">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control border border-danger"
+                            placeholder="Enter your email address" required>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="col-md-6">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control border border-danger"
+                            placeholder="Enter your phone number" required>
+                    </div>
+
+                    <!-- Select Service Category -->
+
+                    <div class="col-md-6">
+                        <label class="form-label">Select Service Category</label>
+                        <select id="serviceCategory" required class="form-select border border-danger" style="
+                                width: 100%;
+                                height: 48px;              /* Uniform height */
+                                padding: 10px 16px;        /* Consistent padding */
+                                border-radius: 8px;        /* Rounded corners */
+                                border: 1px solid #dc3545; /* Bootstrap danger color */
+                                background-color: #f9f9f9; /* Light background */
+                                font-size: 16px;           /* Consistent font size */
+                                line-height: 1.5;
+                                transition: border-color 0.3s, box-shadow 0.3s;
+                            ">
+                            <option disabled selected>Select a category</option>
+                            <option>Security Services</option>
+                            <option>Handyman Services</option>
+                            <option>IT Services</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Select Specific Service -->
+                    <div class="col-md-6">
+                        <label class="form-label">Select Specific Service</label>
+                        <select class="form-select border border-danger p-2" id="specificService" required style="
+                        width: 100%;
+                        height: 48px;              /* Uniform height */
+                        padding: 10px 16px;        /* Consistent padding */
+                        border-radius: 8px;        /* Rounded corners */
+                        border: 1px solid #dc3545; /* Bootstrap danger color */
+                        background-color: #f9f9f9; /* Light background */
+                        font-size: 16px;           /* Consistent font size */
+                        line-height: 1.5;
+                        transition: border-color 0.3s, box-shadow 0.3s;
+                    ">
+                            <option disabled selected>Select a service</option>
+                            <!-- These options will dynamically change based on the category selected -->
+                        </select>
+                    </div>
+
+                    <!-- Message or Requirement -->
+                    <div class="col-md-12">
+                        <label class="form-label">Additional Details / Requirements</label>
+                        <textarea class="form-control border border-danger" rows="3"
+                            placeholder="Describe your needs or questions..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-10 text-center mt-3">
+                        <button type="submit" class="btn btn-submit btn-lg w-100">Submit Request</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const serviceCategory = document.getElementById('serviceCategory');
+                const specificService = document.getElementById('specificService');
+
+                const services = {
+                    "Security Services": [
+                        "Security Guards",
+                        "Personal Body Guards",
+                        "Armed Guards",
+                        "Electronic Fencing",
+                        "Automated Gates & Access Control Systems",
+                        "CCTV Installation",
+                        "Intruder Alarm & Motion Detection",
+                        "Security Audit",
+                        "Gate Security Systems",
+                        "Secured Cash Logistics",
+                        "Employment Investigation & Verification"
+                    ],
+                    "Handyman Services": [
+                        "AC Repair & Maintenance",
+                        "Fridge Service",
+                        "R.O System Maintenance",
+                        "Geyser Repair",
+                        "Microwave Oven Service",
+                        "Electrical Works",
+                        "Plumbing",
+                        "Painting",
+                        "Water Tank Cleaning",
+                        "Pest Control",
+                        "Garden Cleaning",
+                        "Delivery Services",
+                        "Bathroom Cleaning",
+                        "Carrier Delivery",
+                        "Car Wash",
+                        "Catering Services"
+                    ],
+                    "IT Services": [
+                        "Software & Hardware Repair",
+                        "AMC",
+                        "Networking",
+                        "Desktop / Laptop Support",
+                        "Printer Repairs",
+                        "Database Management",
+                        "Security Solutions",
+                        "Application Management",
+                        "CCTV System Repair",
+                        "BMS Products Servicing"
+                    ]
+                };
+
+                serviceCategory.addEventListener('change', function () {
+                    const category = this.value;
+                    const options = services[category] || [];
+
+                    // Clear previous options
+                    specificService.innerHTML = '<option disabled selected>Select a service</option>';
+
+                    // Populate new options
+                    options.forEach(service => {
+                        const option = document.createElement('option');
+                        option.value = service;
+                        option.textContent = service;
+                        specificService.appendChild(option);
+                    });
+                });
+            });
+        </script>
+
+
+
+
+
+    </div>
+
+    <!-- JS Script -->
+    <!--      
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize the page to show the Pricing section only
+            showSection('pricing');
+
+            // Add event listeners for Quotation buttons inside Pricing section
+            document.querySelectorAll(".btn-quotation-pricing").forEach(button => {
+                button.addEventListener("click", function () {
+                    // Hide other category sections
+                    hideCategorySections();
+
+                    // Remove active state from category buttons
+                    document.querySelectorAll('.category-nav button').forEach(button => button.classList.remove('active'));
+
+                    // Show the Quotation form
+                    document.getElementById("quotation-container").style.display = "block";
+                });
+            });
+        });
+
+
+
+        // Function to show top-level sections (Pricing, Payroll, BG, FMS)
+        function showSection(sectionId, event = null) {
+            if (event) event.preventDefault();
+
+            // Remove 'active' class from all nav links
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+
+            // Add 'active' to the clicked link if event exists
+            if (event) event.target.classList.add('active');
+            else {
+                // If no event, make the first nav link active by default
+                document.querySelector('.nav-link[href="#"][onclick*="' + sectionId + '"]').classList.add('active');
+            }
+
+            // Hide all main sections
+            document.querySelectorAll('#pricing, #payroll_main, #bg, #fms').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+
+            // If section is Pricing, reset its internal forms visibility
+            if (sectionId === 'pricing') {
+                hideCategorySections();
+                document.querySelectorAll('.category-nav button').forEach(button => button.classList.remove('active'));
+            }
+        }
+
+        // Function to switch between categories inside Pricing (Payroll / Commission)
+        function changeCategory(category, event) {
+            // Remove active from all category buttons
+            document.querySelectorAll('.category-nav button').forEach(button => button.classList.remove('active'));
+
+            // Add active to clicked button
+            event.target.classList.add('active');
+
+            // Hide all internal pricing forms
+            hideCategorySections();
+
+            // Show the selected category form
+            if (category === 'payroll') {
+                document.getElementById('based-payroll-form-section').style.display = 'block';
+            } else if (category === 'commission') {
+                document.getElementById('product-section').style.display = 'block';
+            }
+        }
+
+        // Helper function to hide all category-related sections
+        function hideCategorySections() {
+            document.getElementById('product-section').style.display = 'none';
+            document.getElementById('based-payroll-form-section').style.display = 'none';
+            document.getElementById('quotation-container').style.display = 'none';
+        }
+    </script> -->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <style>
+            .footer {
+                background-color: #ff0000;
+                color: white;
+                padding: 40px 0 0 0;
+            }
+
+            .footer h5 {
+                margin-bottom: 10px;
+                font-size: 1.5em;
+                position: relative;
+                /* Position relative for the pseudo-element */
+                padding-bottom: 10px;
+                /* Space for the line */
+            }
+
+            .footer h5::after {
+                content: "";
+                display: block;
+                width: 100%;
+                /* Width of the line */
+                height: 1px;
+                /* Thickness of the line */
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                /* Center the line horizontally */
+            }
+
+            .footer hr {
+                border-top: 1px solid white;
+                width: 140px;
+                /* Adjusted width */
+                margin: 10px auto 20px auto;
+                /* Center the hr element */
+            }
+
+            .footer a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .footer a:hover {
+                text-decoration: underline;
+            }
+
+            .footer .social-icons a {
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+
+            .footer .contact-info p {
+                margin: 5px 0;
+            }
+
+            .footer .contact-info i {
+                margin-right: 10px;
+            }
+
+            .footer .copyright {
+                margin-top: 20px;
+                text-align: center;
+                border-top: 1px solid white;
+                padding-top: 10px;
+            }
+
+            @media (max-width: 768px) {
+                .footer .row {
+                    text-align: center;
+                }
+
+                .footer .row>div {
+                    margin-bottom: 20px;
+                }
+
+                .footer h5::after {
+                    width: 50%;
+                    /* Adjust width if necessary */
+                }
+
+                .footer .col-md-4 {
+                    text-align: center;
+                }
+
+                .footer .contact-info p,
+                .footer .contact-info i {
+                    font-size: 0.9em;
+                    /* Slightly smaller text for mobile */
+                }
+
+                .footer .social-icons a {
+                    font-size: 1.2em;
+                    /* Adjust icon size for mobile */
+                }
+
+                .footer .copyright {
+                    padding-top: 5px;
+                }
+            }
+        </style>
+
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row text-start text-md-left ms-lg-5 me-lg-5">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Connections</h5>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">
+                                    <h6>Home</h6>
+                                </a></li>
+                            <li><a href="career.html">
+                                    <h6>Career</h6>
+                                </a></li>
+                            <li><a href="about.html">
+                                    <h6>About</h6>
+                                </a></li>
+                            <li><a href="contact.html">
+                                    <h6>Contact us</h6>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Get in touch</h5>
+                        <hr>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i>jktalentsolutions.com</p>
+                            <p><i class="fas fa-phone"></i> 8807880764, 8438438413</p>
+                            <div class="row">
+                                <div class="col-1 col-lg-12"></div>
+                                <div class="col-10 col-lg-12">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p>No,7, 4th street, shanmuganagar-2, Vengikkal, Tiruvannamalai, Tamil Nadu
+                                            606604
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 col-lg-12"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="./images/footer-custom-logo.png" alt="JK Talent Solutions Logo"
+                            class="img-fluid mb-3">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/jktalentsolution_off"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/talent_jk47795"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/@JKTALENTSOLUTIONS-o4l"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 me-lg-5 ms-lg-5">
+                    <div class="col-12">
+                        <p class="copyright fw-bold">&copy; <b>2024 JK Talent Solutions.</b> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <div class="mt-4" id="footer"></div>
+
+    <script src="./scripts/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

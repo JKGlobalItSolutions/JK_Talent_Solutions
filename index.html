@@ -11,9 +11,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,23 +43,23 @@
         <nav class="navbar navbar-expand-lg navbar-light py-4">
             <div class="container-fluid">
                 <!-- Logo for All Views -->
-            
 
-                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">  
+
+                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">
                     <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
                     <style>
                         /* Default style for larger screens */
                         .logs {
-                            height: 55px;
+                            height: 100px;
                         }
-                        
+
                         /* Media query for mobile devices */
                         @media (max-width: 768px) {
                             .logs {
                                 height: 39px;
                             }
                         }
-                        </style>   
+                    </style>
                 </a>
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -74,7 +74,7 @@
                             <a style="color: #000000; font-weight: 600;" class="nav-link active" aria-current="page"
                                 href="index.html">Home</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
                         </li>
@@ -85,7 +85,8 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
                                 <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
-                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
+                                        Services</a></li>
                                 <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
                                 <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
@@ -93,18 +94,22 @@
                                 <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
                             </ul>
                         </li>
-                       
+
+
+                        
             <li class="nav-item">
-                <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/jkfixit.html">Jk Fixit</a>
+                <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                  class="nav-link rounded px-2" href="./jkfixit.html">JK-FIX-IT</a>
               </li>
-                        
-                        
+
+
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/pricing.html" id="navbarDropdownServices" role="button">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/pricing.html"
+                                id="navbarDropdownServices" role="button">
                                 Pricing
                             </a>
                         </li>
-                        
+
 
                         <!-- <li class="nav-item dropdown">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
@@ -165,18 +170,20 @@
                         </style>
 
 
-                         
+
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers*</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
+                                Seekers*</a>
                         </li>
-                        <li class="nav-item">
-                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
-                        </li>
-                        
+                        <!-- <li class="nav-item">
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                                class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                        </li> -->
+
                         <script>
                             document.addEventListener("DOMContentLoaded", () => {
                                 const button = document.getElementById('blinkButton');
-                                
+
                                 setInterval(() => {
                                     // Check the current background color
                                     if (button.style.backgroundColor === 'red') {
@@ -189,15 +196,16 @@
                                 }, 1000); // Change every 1 second
                             });
                         </script>
-                        
-                        
-                        
+
+
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"  style="color: #FF0000; font-weight: 600;" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" style="color: #FF0000; font-weight: 600;"
+                                id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Careers
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="careersDropdown">
-                                <li><a class="dropdown-item"   href="/career.html">Careers</a></li>
+                                <li><a class="dropdown-item" href="/career.html">Careers</a></li>
                                 <li><a class="dropdown-item" href="/">Referral Program</a></li>
                             </ul>
                         </li>
@@ -207,86 +215,88 @@
                         </li> -->
 
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link"
+                                href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-         <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-        .slider {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
+            .slider {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
 
-        .slides {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
+            .slides {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
 
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+            }
 
-        .slide img {
-            width: 100%;
-            display: block;
-        }
+            .slide img {
+                width: 100%;
+                display: block;
+            }
 
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-        }
+            .nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1000;
+            }
 
-        .prev {
-            left: 10px;
-        }
+            .prev {
+                left: 10px;
+            }
 
-        .next {
-            right: 10px;
-        }
-    </style>
-  
- 
-  
-</head>
-<body>
-    <div class="slider mt-0">
-        <div class="slides">
-            <!-- Duplicate slides to create seamless scrolling -->
-            <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
-            <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
-            <!-- <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div> -->
-            <!-- <div class="slide"><img src="./images/event management banner.png" alt="Slide 4"></div> -->
-            <div class="slide"><img src="./images/verification banner.png" alt="Slide 5"></div>
-            <div class="slide"><img src="./images/Banner 3.png" alt="Slide 6"></div>
+            .next {
+                right: 10px;
+            }
+        </style>
 
-            <!-- Duplicate slides again -->
-            <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
-            <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
-            <!-- <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div> -->
-            <!-- <div class="slide"><img src="./images/event management banner.png" alt="Slide 4"></div> -->
-            <div class="slide"><img src="./images/verification banner.png" alt="Slide 5"></div>
-            <div class="slide"><img src="./images/Banner 3.png" alt="Slide 6"></div>
-        </div>
-        <button class="nav-button prev">&#10094;</button>
-        <button class="nav-button next">&#10095;</button>
-    </div>
-    <!-- <style>
+
+
+        </head>
+
+        <body>
+            <div class="slider mt-0">
+                <div class="slides">
+                    <!-- Duplicate slides to create seamless scrolling -->
+                    <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
+                    <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
+                    <!-- <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div> -->
+                    <!-- <div class="slide"><img src="./images/event management banner.png" alt="Slide 4"></div> -->
+                    <div class="slide"><img src="./images/verification banner.png" alt="Slide 5"></div>
+                    <div class="slide"><img src="./images/Banner 3.png" alt="Slide 6"></div>
+
+                    <!-- Duplicate slides again -->
+                    <div class="slide"><img src="./images/Banner 1.png" alt="Slide 1"></div>
+                    <div class="slide"><img src="./images/payroll banner.png" alt="Slide 2"></div>
+                    <!-- <div class="slide"><img src="./images/Banner 2.png" alt="Slide 3"></div> -->
+                    <!-- <div class="slide"><img src="./images/event management banner.png" alt="Slide 4"></div> -->
+                    <div class="slide"><img src="./images/verification banner.png" alt="Slide 5"></div>
+                    <div class="slide"><img src="./images/Banner 3.png" alt="Slide 6"></div>
+                </div>
+                <button class="nav-button prev">&#10094;</button>
+                <button class="nav-button next">&#10095;</button>
+            </div>
+            <!-- <style>
         /* Initial hidden state */
         #alertBox {
           opacity: 0;
@@ -300,8 +310,8 @@
           transform: translateY(0); /* Slide up into view */
         }
       </style> -->
-      
-      <!-- <div id="alertBox" style="background-color: #C80036;" class="text-center mb-0 py-1 align-items-center justify-content-center text-center">
+
+            <!-- <div id="alertBox" style="background-color: #C80036;" class="text-center mb-0 py-1 align-items-center justify-content-center text-center">
           <p class="mt-2" style="color: white;">
               ⚠️100 Percent Free Placement  ⚠️
               <button id="closeAlert" style="border: none; background: transparent; color: white; font-size: 18px; cursor: pointer;">✖</button>
@@ -319,76 +329,76 @@
           document.getElementById('alertBox').style.display = 'none';
         });
       </script> -->
-      
-      
-    
 
- <script>
-    const slides = document.querySelector('.slides');
-const slideCount = document.querySelectorAll('.slide').length;
-const slideWidth = 100; // Assuming each slide takes 100% width
-let currentIndex = 0;
-let slideInterval;
 
-function goToSlide(index) {
-    slides.style.transition = 'transform 0.5s ease';
-    slides.style.transform = `translateX(-${index * slideWidth}%)`;
-    currentIndex = index;
 
-    // When reaching the cloned slides, jump back to the start
-    if (index >= slideCount / 2) {
-        setTimeout(() => {
-            slides.style.transition = 'none';
-            slides.style.transform = 'translateX(0)';
-            currentIndex = 0;
-        }, 500); // Match this delay to the transition time
-    }
-}
 
-function nextSlide() {
-    goToSlide(currentIndex + 1);
-}
+            <script>
+                const slides = document.querySelector('.slides');
+                const slideCount = document.querySelectorAll('.slide').length;
+                const slideWidth = 100; // Assuming each slide takes 100% width
+                let currentIndex = 0;
+                let slideInterval;
 
-function prevSlide() {
-    if (currentIndex > 0) {
-        goToSlide(currentIndex - 1);
-    } else {
-        slides.style.transition = 'none';
-        slides.style.transform = `translateX(-${(slideCount / 2 - 1) * slideWidth}%)`;
-        currentIndex = slideCount / 2 - 1;
-        setTimeout(() => {
-            slides.style.transition = 'transform 0.5s ease';
-            goToSlide(currentIndex - 1);
-        }, 0);
-    }
-}
+                function goToSlide(index) {
+                    slides.style.transition = 'transform 0.5s ease';
+                    slides.style.transform = `translateX(-${index * slideWidth}%)`;
+                    currentIndex = index;
 
-function startSlideShow() {
-    slideInterval = setInterval(nextSlide, 6000); // Change slides every 3 seconds
-}
+                    // When reaching the cloned slides, jump back to the start
+                    if (index >= slideCount / 2) {
+                        setTimeout(() => {
+                            slides.style.transition = 'none';
+                            slides.style.transform = 'translateX(0)';
+                            currentIndex = 0;
+                        }, 500); // Match this delay to the transition time
+                    }
+                }
 
-function stopSlideShow() {
-    clearInterval(slideInterval);
-}
+                function nextSlide() {
+                    goToSlide(currentIndex + 1);
+                }
 
-document.querySelector('.next').addEventListener('click', () => {
-    nextSlide();
-    stopSlideShow();
-    startSlideShow();
-});
+                function prevSlide() {
+                    if (currentIndex > 0) {
+                        goToSlide(currentIndex - 1);
+                    } else {
+                        slides.style.transition = 'none';
+                        slides.style.transform = `translateX(-${(slideCount / 2 - 1) * slideWidth}%)`;
+                        currentIndex = slideCount / 2 - 1;
+                        setTimeout(() => {
+                            slides.style.transition = 'transform 0.5s ease';
+                            goToSlide(currentIndex - 1);
+                        }, 0);
+                    }
+                }
 
-document.querySelector('.prev').addEventListener('click', () => {
-    prevSlide();
-    stopSlideShow();
-    startSlideShow();
-});
+                function startSlideShow() {
+                    slideInterval = setInterval(nextSlide, 6000); // Change slides every 3 seconds
+                }
 
-startSlideShow();
+                function stopSlideShow() {
+                    clearInterval(slideInterval);
+                }
 
- </script>
-        
+                document.querySelector('.next').addEventListener('click', () => {
+                    nextSlide();
+                    stopSlideShow();
+                    startSlideShow();
+                });
 
-      
+                document.querySelector('.prev').addEventListener('click', () => {
+                    prevSlide();
+                    stopSlideShow();
+                    startSlideShow();
+                });
+
+                startSlideShow();
+
+            </script>
+
+
+
 
 
 
@@ -407,43 +417,49 @@ startSlideShow();
                             h1.ms-4 {
                                 color: #F01905;
                             }
-                            
+
                             @media (max-width: 767px) {
                                 h1.ms-4 {
                                     font-size: 30px;
                                 }
                             }
                         </style>
-                         <h1 class="ms-4"><b> We offer economical HR solutions for your company. </b></h1>
+                        <h1 class="ms-4"><b> We offer economical HR solutions for your company. </b></h1>
                     </div>
-                        <p class="mt-4" style="color: #151515; font-weight: 600;">As your HR solutions partner, JK Talent Solutions is devoted to providing the greatest quality at the lowest possible cost to customers. We make the required investments in technology and processes to improve efficiency at all levels.</p>
-                        <p style="color: #151515; font-weight: 600;">JK Talent Solutions prioritizes you and your workers and offers an uncompromised experience.</p>
-                        <div class="row text-lg-left text-left  ">
-                            <div class="col-lg-4 my-2 ">
-                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Efficiency</p>
-                                <p style="font-weight: 600;" > <img src="./images/tick.png" alt=""> Innovation</p>
-                            </div>
-                            <div class="col-lg-4 my-2">
-                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Security</p>
-                                <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Customization</p>
-                            </div>
-                            <div class="col-lg-4 my-2">
-                                <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Integrity</p>
-                                <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Affordable</p>
-                            </div>
+                    <p class="mt-4" style="color: #151515; font-weight: 600;">As your HR solutions partner, JK Talent
+                        Solutions is devoted to providing the greatest quality at the lowest possible cost to customers.
+                        We make the required investments in technology and processes to improve efficiency at all
+                        levels.</p>
+                    <p style="color: #151515; font-weight: 600;">JK Talent Solutions prioritizes you and your workers
+                        and offers an uncompromised experience.</p>
+                    <div class="row text-lg-left text-left  ">
+                        <div class="col-lg-4 my-2 ">
+                            <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Efficiency
+                            </p>
+                            <p style="font-weight: 600;"> <img src="./images/tick.png" alt=""> Innovation</p>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-2 text-center">
-                                <img class="img-fluid" src="./images/under.png" alt="">
-                            </div>
-                            <div class="col-lg-10">
-                                <p style="font-weight: 600;">Understanding your workflow, tailoring to your needs, and swiftly transitioning to the leading HR management platform in the industry.</p>
-                            </div>
+                        <div class="col-lg-4 my-2">
+                            <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Security</p>
+                            <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Customization</p>
                         </div>
-                        <div class="text-lg-left text-center">
-                        <img  style="height: 70px;" class="img-fluid my-3" src="./images/trust.png" alt="">
+                        <div class="col-lg-4 my-2">
+                            <p class="mb-4" style="font-weight: 600;"><img src="./images/tick.png" alt=""> Integrity</p>
+                            <p style="font-weight: 600;"><img src="./images/tick.png" alt=""> Affordable</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 text-center">
+                            <img class="img-fluid" src="./images/under.png" alt="">
+                        </div>
+                        <div class="col-lg-10">
+                            <p style="font-weight: 600;">Understanding your workflow, tailoring to your needs, and
+                                swiftly transitioning to the leading HR management platform in the industry.</p>
+                        </div>
+                    </div>
+                    <div class="text-lg-left text-center">
+                        <img style="height: 70px;" class="img-fluid my-3" src="./images/trust.png" alt="">
 
-                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -455,11 +471,18 @@ startSlideShow();
                 </div>
                 <div class="col-12 col-lg-6">
                     <h3 class="fw-bold text-left" style="color: #FF0000;">About Us</h3>
-                    <p class="" style="font-weight: 600;">At JK Talent Solutions, we offer a wide range of services tailored to meet your needs. Our comprehensive HR solutions streamline recruitment and management, while our integrated facility management ensures smooth operations. We provide top-notch private security and manned guarding, exceptional catering for any event, and reliable home repair services. With a focus on quality and customer satisfaction, we are your trusted partner for efficient and effective solutions across various aspects of your personal and professional life.</p>
-                       <div class="text-left text-lg-start">
-                       <button class="p-2 " style="border: none; background-color: #C80036;color: white;">View More</button>
+                    <p class="" style="font-weight: 600;">At JK Talent Solutions, we offer a wide range of services
+                        tailored to meet your needs. Our comprehensive HR solutions streamline recruitment and
+                        management, while our integrated facility management ensures smooth operations. We provide
+                        top-notch private security and manned guarding, exceptional catering for any event, and reliable
+                        home repair services. With a focus on quality and customer satisfaction, we are your trusted
+                        partner for efficient and effective solutions across various aspects of your personal and
+                        professional life.</p>
+                    <div class="text-left text-lg-start">
+                        <button class="p-2 " style="border: none; background-color: #C80036;color: white;">View
+                            More</button>
 
-                       </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -487,11 +510,11 @@ startSlideShow();
                     <div class="image-container">
                         <img class="img-fluid" src="./images/h i 5.png" alt="">
                         <div class="overlay">
-                           <h6>Other Services</h6>
+                            <h6>Other Services</h6>
                         </div>
                     </div>
                 </div>
-             
+
                 <!-- <div class="col-12 col-lg-4 col-md-4 my-lg-0">
                     <div class="image-container">
                         <img class="img-fluid" src="./images/event image.png" alt="">
@@ -500,7 +523,7 @@ startSlideShow();
                         </div>
                     </div>
                 </div> -->
-            
+
             </div>
             <div class="row my-3 my-lg-3">
                 <div class="col-12 col-lg-4 col-md-4 d-lg-block d-md-none my-lg-0">
@@ -515,165 +538,172 @@ startSlideShow();
         </div>
         <style>
             .image-container {
-    position: relative;
-    display: inline-block;
-}
+                position: relative;
+                display: inline-block;
+            }
 
-.image-container img {
-    transition: opacity 0.3s ease;
-}
+            .image-container img {
+                transition: opacity 0.3s ease;
+            }
 
-.image-container:hover img {
-    filter: brightness(60%) /* Decrease image opacity on hover */
-}
+            .image-container:hover img {
+                filter: brightness(60%)
+                    /* Decrease image opacity on hover */
+            }
 
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FF0000; /* Red background */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.3s ease;
-}
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #FF0000;
+                /* Red background */
+                color: white;
+                text-align: center;
+                padding: 10px;
+                opacity: 0;
+                /* Hidden by default */
+                transition: opacity 0.3s ease;
+            }
 
-.image-container:hover .overlay {
-    opacity: 1.5; /* Show overlay on hover */
-}
-
+            .image-container:hover .overlay {
+                opacity: 1.5;
+                /* Show overlay on hover */
+            }
         </style>
-        
+
         <!-- images end -->
 
 
-         <!-- Sectors start -->
-                <div style="background-color: #EEEEEE;" class="sector pb-4 ">
-                        <h1 class="text-center fw-bolder pt-5" style="color: #FF0000;">OUR SECTORS</h1>
-                        <div class="container-fluid text-center">   
-                        <div class="row my-3 ms-3">
-                            <div class="col-12 col-lg-4 text-center my-3 ">
-                                <div class="row align-items-center justify-content-center ">
-                                    <div class="col-12 col-lg-2">
-                                        <img class="img-fluid " src="./images/sector logo/sector logo 1.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">IT ( Information Technology )</h5>
-                                      
-                                    </div>
-                                    
-                                </div>
-                                
+        <!-- Sectors start -->
+        <div style="background-color: #EEEEEE;" class="sector pb-4 ">
+            <h1 class="text-center fw-bolder pt-5" style="color: #FF0000;">OUR SECTORS</h1>
+            <div class="container-fluid text-center">
+                <div class="row my-3 ms-3">
+                    <div class="col-12 col-lg-4 text-center my-3 ">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-12 col-lg-2">
+                                <img class="img-fluid " src="./images/sector logo/sector logo 1.png" alt="">
                             </div>
-                            <div class="col-12 col-lg-4  my-3">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 2.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Hospitals</h5>
-                                     
-                                    </div>
-                                </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">IT ( Information
+                                    Technology )</h5>
+
                             </div>
-                            <div class="col-12 col-lg-4  mt-3">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 3.png" alt="">
-                                    </div>
-                                    <div class="col-12  col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Education</h5>
-                                   
-                                    </div>
-                                </div>
-                            </div>
-                     
-                        </div>
-                        <div class="row my-3 ms-3">
-                           
-                            <div class="col-12 col-lg-4  mb-4">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 4.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">BPO (Business Process Outsourcing)</h5>
-                                     
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4  mb-4">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 5.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Banking and Financial Services</h5>
-                                   
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4  ">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 6.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Public Administration</h5>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                          
-                          
+
                         </div>
 
-                        <div class="row my-3 ms-3">
-                            <div class="col-12 col-lg-4  mb-4">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 7.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Hotels</h5>
-                                    
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-12 col-lg-4  my-3">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 2.png" alt="">
                             </div>
-                            <div class="col-12 col-lg-4  mb-4">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 8.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Airport</h5>
-                                    
-                                    </div>
-                                </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Hospitals</h5>
+
                             </div>
-                            <div class="col-12 col-lg-4 ">
-                                <div class="row align-items-center justify-content-center my-3">
-                                    <div class="col-12 col-lg-2 text-center">
-                                        <img class="img-fluid" src="./images/sector logo/sector logo 9.png" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-10">
-                                        <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Industrial</h5>
-                               
-                                    </div>
-                                </div>
-                            </div>
-                          
-                          
                         </div>
                     </div>
-                    
-                </div>
-         <!-- Sectors end -->
+                    <div class="col-12 col-lg-4  mt-3">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 3.png" alt="">
+                            </div>
+                            <div class="col-12  col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Education</h5>
 
-         <!-- work process start -->
-         <div id="start" class="work-process">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row my-3 ms-3">
+
+                    <div class="col-12 col-lg-4  mb-4">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 4.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">BPO (Business
+                                    Process Outsourcing)</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4  mb-4">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 5.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Banking and
+                                    Financial Services</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4  ">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 6.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Public
+                                    Administration</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row my-3 ms-3">
+                    <div class="col-12 col-lg-4  mb-4">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 7.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Hotels</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4  mb-4">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 8.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Airport</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 ">
+                        <div class="row align-items-center justify-content-center my-3">
+                            <div class="col-12 col-lg-2 text-center">
+                                <img class="img-fluid" src="./images/sector logo/sector logo 9.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-10">
+                                <h5 class="fw-bold text-lg-left text-center" style="color: #FF0000;">Industrial</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Sectors end -->
+
+        <!-- work process start -->
+        <div id="start" class="work-process">
             <h1>Our Work Process</h1>
             <div class="container">
                 <div class="row">
@@ -692,7 +722,7 @@ startSlideShow();
                 </div>
             </div>
         </div>
-        
+
         <script>
             // Function to start counting
             const startCounters = () => {
@@ -714,7 +744,7 @@ startSlideShow();
                     updateCounter();
                 });
             };
-        
+
             // Intersection Observer callback
             const handleIntersection = (entries, observer) => {
                 entries.forEach(entry => {
@@ -724,16 +754,16 @@ startSlideShow();
                     }
                 });
             };
-        
+
             // Create an Intersection Observer
             const observer = new IntersectionObserver(handleIntersection, {
                 threshold: 0.1 // Adjust threshold as needed
             });
-        
+
             // Observe the #start element
             observer.observe(document.getElementById('start'));
         </script>
-        
+
         <style>
             .work-process {
                 background-color: #ff0000;
@@ -741,63 +771,67 @@ startSlideShow();
                 padding: 50px 0;
                 text-align: center;
             }
+
             .work-process h1 {
                 margin-bottom: 30px;
                 font-size: 2.5em;
             }
+
             .counter {
                 font-size: 2em;
                 font-weight: bold;
             }
         </style>
-        
-         <!-- work process end -->
 
-         <!-- Benefits start -->
-          <div class="container-fluid text-center p-2 p-lg-5">
-            <h2 class="fw-bold mb-4" style="color: #FF0000;">Benefits Of Integrated Services Provided By JK Talent Solutions</h2>
-          <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4 my-3">
+        <!-- work process end -->
+
+        <!-- Benefits start -->
+        <div class="container-fluid text-center p-2 p-lg-5">
+            <h2 class="fw-bold mb-4" style="color: #FF0000;">Benefits Of Integrated Services Provided By JK Talent
+                Solutions</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 my-3">
                         <img src="./images/benefits/benefits 1.png" alt="">
-                        <h5 class="fw-bold" style="color: #FF0000;" >All-encompassing Method</h5>
-                     
-                </div>
-                <div class="col-12 col-lg-4  my-3">
+                        <h5 class="fw-bold" style="color: #FF0000;">All-encompassing Method</h5>
+
+                    </div>
+                    <div class="col-12 col-lg-4  my-3">
                         <img src="./images/benefits/benefits 2.png" alt="">
-                        <h5 class="fw-bold" style="color: #FF0000;" >Personalized remedy</h5>
-                   
-                </div>
-                <div class="col-12 col-lg-4 text-center my-3">
+                        <h5 class="fw-bold" style="color: #FF0000;">Personalized remedy</h5>
+
+                    </div>
+                    <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 3.png" alt="">
-                        <h5 class="fw-bold" style="color: #FF0000;" >Experience and Experts</h5>
-                     
-                </div>
-                <div class="col-12 col-lg-4 text-center my-3">
+                        <h5 class="fw-bold" style="color: #FF0000;">Experience and Experts</h5>
+
+                    </div>
+                    <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 4.png" alt="">
-                        <h5 class="fw-bold" style="color: #FF0000;" >Cost Savings</h5>
-                 
-                </div>
-                <div class="col-12 col-lg-4 text-center my-3">
+                        <h5 class="fw-bold" style="color: #FF0000;">Cost Savings</h5>
+
+                    </div>
+                    <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 5.png" alt="">
-                        <h5 class="fw-bold" style="color: #FF0000;" >Real-Time Monitoring &
+                        <h5 class="fw-bold" style="color: #FF0000;">Real-Time Monitoring &
                             Reporting</h5>
-               
-                </div>
-                <div class="col-12 col-lg-4 text-center my-3">
+
+                    </div>
+                    <div class="col-12 col-lg-4 text-center my-3">
                         <img src="./images/benefits/benefits 6.png" alt="">
-                        <h5 class="fw-bold" style="color: #FF0000;" >Access to specialized
+                        <h5 class="fw-bold" style="color: #FF0000;">Access to specialized
                             services </h5>
-                     
+
+                    </div>
+
                 </div>
-              
-              </div>
-          </div>
-          
+            </div>
+
         </div>
-         <!-- Benefits end -->
+        <!-- Benefits end -->
 
     </main>
+
     <footer>
         <style>
             .footer {
@@ -805,64 +839,84 @@ startSlideShow();
                 color: white;
                 padding: 40px 0 0 0;
             }
+
             .footer h5 {
                 margin-bottom: 10px;
                 font-size: 1.5em;
-                position: relative; /* Position relative for the pseudo-element */
-                padding-bottom: 10px; /* Space for the line */
+                position: relative;
+                /* Position relative for the pseudo-element */
+                padding-bottom: 10px;
+                /* Space for the line */
             }
+
             .footer h5::after {
                 content: "";
                 display: block;
-                width: 100%; /* Width of the line */
-                height: 1px; /* Thickness of the line */
+                width: 100%;
+                /* Width of the line */
+                height: 1px;
+                /* Thickness of the line */
                 background-color: white;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
-                transform: translateX(-50%); /* Center the line horizontally */
+                transform: translateX(-50%);
+                /* Center the line horizontally */
             }
+
             .footer hr {
                 border-top: 1px solid white;
-                width: 140px; /* Adjusted width */
-                margin: 10px auto 20px auto; /* Center the hr element */
+                width: 140px;
+                /* Adjusted width */
+                margin: 10px auto 20px auto;
+                /* Center the hr element */
             }
+
             .footer a {
                 color: white;
                 text-decoration: none;
             }
+
             .footer a:hover {
                 text-decoration: underline;
             }
+
             .footer .social-icons a {
                 margin: 0 10px;
                 font-size: 1.5em;
             }
+
             .footer .contact-info p {
                 margin: 5px 0;
             }
+
             .footer .contact-info i {
                 margin-right: 10px;
             }
+
             .footer .copyright {
                 margin-top: 20px;
                 text-align: center;
                 border-top: 1px solid white;
                 padding-top: 10px;
             }
+
             @media (max-width: 768px) {
                 .footer .row.text-center.text-md-left {
                     text-align: center;
                 }
-                .footer .row.text-center.text-md-left > div {
+
+                .footer .row.text-center.text-md-left>div {
                     margin-bottom: 20px;
                 }
+
                 .footer h5::after {
-                    width: 50%; /* Adjust width if necessary */
+                    width: 50%;
+                    /* Adjust width if necessary */
                 }
             }
         </style>
-        
+
         <div class="footer">
             <div class="container-fluid ">
                 <div class="row text-center text-md-left ms-lg-5 me-lg-5">
@@ -870,10 +924,18 @@ startSlideShow();
                         <h5>Connections</h5>
                         <hr>
                         <ul class="list-unstyled">
-                            <li><a href="index.html"><h6>Home</h6></a></li>
-                            <li><a href="career.html"><h6>Career</h6></a></li>
-                            <li><a href="about.html"><h6>About</h6></a></li>
-                            <li><a href="contact.html"><h6>Contact us</h6></a></li>
+                            <li><a href="index.html">
+                                    <h6>Home</h6>
+                                </a></li>
+                            <li><a href="career.html">
+                                    <h6>Career</h6>
+                                </a></li>
+                            <li><a href="about.html">
+                                    <h6>About</h6>
+                                </a></li>
+                            <li><a href="contact.html">
+                                    <h6>Contact us</h6>
+                                </a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
@@ -887,21 +949,27 @@ startSlideShow();
                                 <div class="col-10 col-lg-12">
                                     <div class="d-flex align-items-center">
                                         <i class="fas fa-map-marker-alt"></i>
-                                     <p>No,7, 4th street, shanmuganagar-2, Vengikkal, Tiruvannamalai, Tamil Nadu 606604
-                                    </p>
+                                        <p>No,7, 4th street, shanmuganagar-2, Vengikkal, Tiruvannamalai, Tamil Nadu
+                                            606604
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-1 col-lg-12"></div>
                             </div>
-                           
-                  
+
+
                         </div>
                     </div>
                     <div class="col-md-4 text-center ">
-                        <img src="./images/footer-custom-logo.png" alt="JK Talent Solutions Logo" class="img-fluid mb-3">
+                        
+                        <img src="./images/footer-custom-logo.png" alt="JK Talent Solutions Logo"
+                            class="img-fluid mb-3 bg-white rounded-1">
+
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/jktalentsolution_off"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61559849413983"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/jktalentsolution_off"><i
+                                    class="fab fa-instagram"></i></a>
                             <a href="https://x.com/talent_jk47795"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.youtube.com/@JKTALENTSOLUTIONS-o4l"><i class="fab fa-youtube"></i></a>
                         </div>
@@ -915,7 +983,7 @@ startSlideShow();
             </div>
         </div>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -923,10 +991,10 @@ startSlideShow();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

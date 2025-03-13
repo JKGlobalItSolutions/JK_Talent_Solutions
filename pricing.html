@@ -362,7 +362,7 @@
                             Pricing
                         </a>
                     </li>
-<!-- 
+                    <!-- 
                     <li class="nav-item">
                         <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
                             Seekers*</a>
@@ -1240,7 +1240,6 @@
                     </div>
 
                     <!-- Select Service Category -->
-
                     <div class="col-md-6">
                         <label class="form-label">Select Service Category</label>
                         <select id="serviceCategory" required class="form-select border border-danger" style="
@@ -1258,11 +1257,14 @@
                             <option>Security Services</option>
                             <option>Handyman Services</option>
                             <option>IT Services</option>
+                            <option>Housekeeping Services</option> <!-- Added option -->
                         </select>
                     </div>
 
 
+
                     <!-- Select Specific Service -->
+
                     <div class="col-md-6">
                         <label class="form-label">Select Specific Service</label>
                         <select class="form-select border border-danger p-2" id="specificService" required style="
@@ -1344,7 +1346,19 @@
                         "Application Management",
                         "CCTV System Repair",
                         "BMS Products Servicing"
-                    ]
+                    ],
+                    "Housekeeping Services": [
+                    "Office Cleaning",
+                    "Deep Cleaning",
+                    "Carpet Shampooing",
+                    "Pest Control",
+                    "Waste Management",
+                    "Sanitization Services",
+                    "Facade Cleaning",
+                    "Restroom Cleaning",
+                    "Pantry Management",
+                    "Janitorial Staff Supply"
+                ]
                 };
 
                 serviceCategory.addEventListener('change', function () {

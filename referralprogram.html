@@ -141,18 +141,19 @@
                 <!-- Logo for All Views -->
             
 
+              
                 <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">  
-                    <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
+                    <img class="img-fluid logs mb-3" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
                     <style>
                         /* Default style for larger screens */
                         .logs {
-                            height: 100px;
+                            height: 80px;
                         }
                         
                         /* Media query for mobile devices */
                         @media (max-width: 768px) {
                             .logs {
-                                height: 39px;
+                                height: 60px;
                             }
                         }
                         </style>   
@@ -466,10 +467,30 @@
                 <label for="resume" class="fw-bold fs-4 mb-3 d-block" style="color: #ff0000;">Upload Candidate's Resume</label>
                 <input type="file" id="resume" name="resume" class="form-control upload-input" accept=".pdf,.doc,.docx">
     
-                <div class="checkbox-label mt-3">
-                    <input type="checkbox" id="consent" required>
-                    <label for="consent">I confirm that I have obtained the candidate's consent to share their details with JK Talent Solution.</label>
-                </div>
+                <style>
+                    .checkbox-label-tight {
+                      display: flex;
+                      align-items: center;
+                    }
+                  
+                    .checkbox-label-tight label {
+                      margin-left: 2px; /* super tight space */
+                    }
+                  </style>
+                  
+                  <div class="row align-items-start mt-4">
+                      <!-- Checkbox and Label -->
+                      <div class="col-12 col-lg-8">
+                          <div class="checkbox-label mt-3 checkbox-label-tight">
+                              <input type="checkbox" id="consent" required>
+                              <label for="consent" class="mb-0">
+                                  I confirm that I have obtained the candidate's consent to share their details with JK Talent Solution.
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  
     
                 <button type="submit" class="btn mt-4">Submit Referral</button>
             </form>

@@ -299,102 +299,102 @@
     <!-- chatbot  -->
 
 
-<!-- 💬 Floating Chat Icon (Initially Visible) -->
-<div id="chatToggle"
-    class="position-fixed bottom-0 end-0 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-lg"
-    style="width: 60px; height: 60px; cursor: pointer; z-index: 1000; background: linear-gradient(135deg, #0d6efd, #6610f2); font-size: 24px; margin: 20px;">
-    💬
-</div>
-
-<!-- 🧠 Chatbot Container (Initially Hidden) -->
-<div id="chatbotBox"
-    class="chat-container shadow-lg position-fixed d-none"
-    style="bottom: 80px; right: 20px; width: 360px; z-index: 999; border-radius: 15px; overflow: hidden; background: white;">
-
-    <!-- Header with Close Button -->
-    <div class="chat-header d-flex justify-content-between align-items-center text-white px-3 py-2 fw-bold"
-        style="background: linear-gradient(135deg, #0d6efd, #6610f2);">
-        <span>🤖 JK Chatbot</span>
-        <button id="chatClose" class="btn btn-sm text-white" style="font-size: 22px; line-height: 1;">&times;</button>
+    <!-- 💬 Floating Chat Icon (Initially Visible) -->
+    <div id="chatToggle"
+        class="position-fixed bottom-0 end-0 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+        style="width: 60px; height: 60px; cursor: pointer; z-index: 1000; background: linear-gradient(135deg, #0d6efd, #6610f2); font-size: 24px; margin: 20px;">
+        💬
     </div>
 
-    <div class="chat-body p-3 overflow-auto" id="chatBody" style="height: 340px;">
-        <!-- Messages appear here -->
+    <!-- 🧠 Chatbot Container (Initially Hidden) -->
+    <div id="chatbotBox" class="chat-container shadow-lg position-fixed d-none"
+        style="bottom: 80px; right: 20px; width: 360px; z-index: 999; border-radius: 15px; overflow: hidden; background: white;">
+
+        <!-- Header with Close Button -->
+        <div class="chat-header d-flex justify-content-between align-items-center text-white px-3 py-2 fw-bold"
+            style="background: linear-gradient(135deg, #0d6efd, #6610f2);">
+            <span>🤖 JK Chatbot</span>
+            <button id="chatClose" class="btn btn-sm text-white"
+                style="font-size: 22px; line-height: 1;">&times;</button>
+        </div>
+
+        <div class="chat-body p-3 overflow-auto" id="chatBody" style="height: 340px;">
+            <!-- Messages appear here -->
+        </div>
+
+        <div class="chat-footer border-top d-flex bg-light p-2">
+            <input type="text" id="userInput" class="form-control border-0" placeholder="Type a message..." />
+            <button onclick="sendMessage()" class="btn btn-primary ms-2">Send</button>
+        </div>
     </div>
 
-    <div class="chat-footer border-top d-flex bg-light p-2">
-        <input type="text" id="userInput" class="form-control border-0" placeholder="Type a message..." />
-        <button onclick="sendMessage()" class="btn btn-primary ms-2">Send</button>
-    </div>
-</div>
+    <!-- 🧾 Styles -->
+    <style>
+        .message {
+            margin-bottom: 10px;
+        }
 
-<!-- 🧾 Styles -->
-<style>
-    .message {
-        margin-bottom: 10px;
-    }
+        .message.user {
+            text-align: right;
+            color: #0d6efd;
+        }
 
-    .message.user {
-        text-align: right;
-        color: #0d6efd;
-    }
+        .message.bot {
+            text-align: left;
+            color: #198754;
+        }
 
-    .message.bot {
-        text-align: left;
-        color: #198754;
-    }
+        .inner-bot-div {
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 4px;
+            font-size: 0.9rem;
+            color: #333;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 
-    .inner-bot-div {
-        background: #f1f1f1;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 4px;
-        font-size: 0.9rem;
-        color: #333;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-    }
-</style>
+    <!-- 🧠 Script -->
+    <script>
+        const toggleBtn = document.getElementById('chatToggle');
+        const chatBox = document.getElementById('chatbotBox');
+        const closeBtn = document.getElementById('chatClose');
 
-<!-- 🧠 Script -->
-<script>
-    const toggleBtn = document.getElementById('chatToggle');
-    const chatBox = document.getElementById('chatbotBox');
-    const closeBtn = document.getElementById('chatClose');
+        toggleBtn.addEventListener('click', () => {
+            chatBox.classList.remove('d-none'); // Show chatbot
+            toggleBtn.style.display = 'none';   // Hide icon
+        });
 
-    toggleBtn.addEventListener('click', () => {
-        chatBox.classList.remove('d-none'); // Show chatbot
-        toggleBtn.style.display = 'none';   // Hide icon
-    });
+        closeBtn.addEventListener('click', () => {
+            chatBox.classList.add('d-none');    // Hide chatbot
+            toggleBtn.style.display = 'flex';   // Show icon again
+        });
 
-    closeBtn.addEventListener('click', () => {
-        chatBox.classList.add('d-none');    // Hide chatbot
-        toggleBtn.style.display = 'flex';   // Show icon again
-    });
+        function sendMessage() {
+            const input = document.getElementById('userInput');
+            const message = input.value.trim();
+            if (!message) return;
 
-    function sendMessage() {
-        const input = document.getElementById('userInput');
-        const message = input.value.trim();
-        if (!message) return;
+            const chatBody = document.getElementById('chatBody');
 
-        const chatBody = document.getElementById('chatBody');
+            const userDiv = document.createElement('div');
+            userDiv.className = 'message user';
+            userDiv.textContent = message;
+            chatBody.appendChild(userDiv);
 
-        const userDiv = document.createElement('div');
-        userDiv.className = 'message user';
-        userDiv.textContent = message;
-        chatBody.appendChild(userDiv);
-
-        const botDiv = document.createElement('div');
-        botDiv.className = 'message bot';
-        botDiv.innerHTML = `
+            const botDiv = document.createElement('div');
+            botDiv.className = 'message bot';
+            botDiv.innerHTML = `
             <div><strong>Bot:</strong> You said: ${message}</div>
             <div class="inner-bot-div">👋 Hello! This is a custom inner div with extra details.</div>
         `;
-        chatBody.appendChild(botDiv);
+            chatBody.appendChild(botDiv);
 
-        input.value = '';
-        chatBody.scrollTop = chatBody.scrollHeight;
-    }
-</script>
+            input.value = '';
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+    </script>
 
 
 
@@ -407,17 +407,6 @@
 
         <!-- Banner start -->
         <style>
-            .banner {
-                background: linear-gradient(to right top, #ff0000, #ff2d26, #ff443f, #ff5755, #ff6969);
-                height: 200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                color: #fff;
-                position: relative;
-            }
-
             .banner img {
                 max-width: 100%;
                 height: auto;
@@ -484,18 +473,15 @@
                 /* Optional: adjust the space between the text and the underline */
             }
         </style>
-        <section class="banner py-5">
-            <div class="container">
-                <div class="row justify-content-start">
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <div class="about-container">
-                            <h1 class="fw-bold mb-4 border-bottom pb-2">About</h1>
 
-                        </div>
-                    </div>
-                </div>
+        <section class="banner ">
+            <div class="container-fluid text-center">
+                <img src="./images/banner/about.jpg" alt="About HRIFY"
+                     style="width: 100%; height: 400px; object-fit: cover;" 
+                     class="img-fluid rounded shadow">
             </div>
         </section>
+
 
 
         <!-- Banner end -->

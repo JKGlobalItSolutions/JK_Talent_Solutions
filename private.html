@@ -17,6 +17,7 @@
 
 <body>
     <header>
+
         <style>
             /* Ensure the logo is always visible and aligned to the left */
             .navbar-brand {
@@ -48,18 +49,17 @@
                     <style>
                         /* Default style for larger screens */
                         .logs {
-                            height:100px;
+                            height: 100px;
                         }
                         
                         /* Media query for mobile devices */
                         @media (max-width: 768px) {
                             .logs {
-                                height: 35px;
+                                height: 39px;
                             }
                         }
-                        </style>     
+                        </style>   
                 </a>
-
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -69,39 +69,70 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-between w-100 ms-0 ms-lg-5 me-5">
-                        <li class="nav-item">
-                            <a style="color: #ff0000; font-weight: 600;" class="nav-link " aria-current="page"
+                        <!-- <li class="nav-item">
+                            <a style="color: #ff0000; font-weight: 600;" class="nav-link active" aria-current="page"
                                 href="index.html">Home</a>
-                        </li>
+                        </li> -->
                         
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
+                            <a style="color: black; font-weight: 600;" class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a style="color: black; font-weight: 600;" class="nav-link dropdown-toggle active" href="#"
-                                id="navbarDropdownServices" role="button">
-                                Services
+                        <li class="nav-item ">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link " href="./Taskmanagement.html"
+                              >
+                               Talent Management
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+                            <!-- <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
                                 <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
-                                <li><a class="dropdown-item" href="private.html">Private Security And Manned Guarding</a></li>
-                                <!-- <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li> -->
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
+                                <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
-                                <li><a class="dropdown-item" href="catering.html">Catering</a></li>
-                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
-                               
-                            </ul>
+                                <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                                <li><a class="dropdown-item" href="training.html">Training & Development</a></li>
+                                <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
+                            </ul> -->
                         </li>
 
-
+                     
                         <li class="nav-item">
-                            <a href="/jkfixit.html">
-                              <img src="./images/jkfixed/jkfixed.png" alt="JK Fixit" style="height: 30px;" />
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/Abroad.html" id="navbarDropdownServices" role="button">
+                             Services
                             </a>
-                          </li>
+                        </li>      
 
-                          
+
+
                         <li class="nav-item dropdown">
+                            <a
+                              
+                              class="nav-link dropdown-toggle rounded px-2"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              style="color: #FF0000; font-weight: 600;"
+                            >
+                              Product
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item " id="blinkButton" href="./jkfixit.html">JK-FIX-IT</a>
+                              </li>
+                              <!-- Add more items here if needed -->
+                            </ul>
+                          </li>
+                          
+                          
+<!--                         
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/pricing.html" id="navbarDropdownServices" role="button">
+                                Pricing
+                            </a>
+                        </li>
+                         -->
+                        
+
+                        <!-- <li class="nav-item dropdown">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
                                 id="navbarDropdownSectors" role="button">
                                 Sectors
@@ -119,7 +150,7 @@
                                 <li><a class="dropdown-item" href="othersectors.html">Other Sectors</a></li>
                               
                             </ul>
-                        </li>
+                        </li> -->
                         <style>
                             /* Hide the dropdown menu by default */
                             .dropdown-menu-hover {
@@ -160,22 +191,48 @@
                         </style>
 
 
-                        <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="training.html">Training &
-                                Development</a>
-                        </li>
+                    
+                        <!-- <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers*</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                        </li> -->
+                        
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                const button = document.getElementById('blinkButton');
+                                
+                                setInterval(() => {
+                                    // Check the current background color
+                                    if (button.style.backgroundColor === 'red') {
+                                        button.style.backgroundColor = '#c43c51'; // Original color
+                                        button.style.color = 'white'; // Original text color
+                                    } else {
+                                        button.style.backgroundColor = 'red'; // Blink color
+                                        button.style.color = 'white'; // Blink text color
+                                    }
+                                }, 1000); // Change every 1 second
+                            });
+                        </script>
+
+                     
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#"  style="color: #FF0000; font-weight: 600;" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Careers
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="careersDropdown">
-                                <li><a class="dropdown-item"   href="/career.html">Careers</a></li>
-                                <li><a class="dropdown-item" href="/">Referral Program</a></li>
+                                <li><a class="dropdown-item"   href="/jobseekers.html">Careers</a></li>
+                                <li><a class="dropdown-item" href="/referralprogram.html">Referral Program</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+
+
+
+                        <!-- <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="contact.html">Contact</a>
                         </li>
@@ -183,11 +240,55 @@
                 </div>
             </div>
         </nav>
+         <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
 
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
 
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
 
+        .slide img {
+            width: 100%;
+            display: block;
+        }
 
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
     </header>
     <main>
 

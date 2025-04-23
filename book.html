@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <header>
 
         <style>
@@ -47,22 +46,21 @@
                 <!-- Logo for All Views -->
 
 
-               
-                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">  
-                    <img class="img-fluid logs mb-3" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
+                <a class="navbar-brand ms-0 ms-lg-3 text-center " href="#">
+                    <img class="img-fluid logs" src="./images/Jk Talent Solutions Logo.png" alt="Logo">
                     <style>
                         /* Default style for larger screens */
                         .logs {
-                            height: 80px;
+                            height: 100px;
                         }
-                        
+
                         /* Media query for mobile devices */
                         @media (max-width: 768px) {
                             .logs {
-                                height: 60px;
+                                height: 39px;
                             }
                         }
-                        </style>   
+                    </style>
                 </a>
                 <!-- Navbar Toggler Button (Visible only on mobile and tablet) -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -73,63 +71,36 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-between w-100 ms-0 ms-lg-5 me-5">
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a style="color: #ff0000; font-weight: 600;" class="nav-link active" aria-current="page"
                                 href="index.html">Home</a>
-                        </li> -->
-
-                        <li class="nav-item">
-                            <a style="color: black; font-weight: 600;" class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link " href="./Taskmanagement.html">
-                                Talent Management
-                            </a>
-                            <!-- <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
-                                <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
-                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management Services</a></li>
-                                <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
-
-                                <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
-                                <li><a class="dropdown-item" href="training.html">Training & Development</a></li>
-                                <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li>
-                            </ul> -->
                         </li>
 
-
                         <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/Abroad.html"
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
                                 id="navbarDropdownServices" role="button">
                                 Services
                             </a>
-                        </li>
+                            <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="navbarDropdownServices">
+                                <li><a class="dropdown-item" href="compre.html">Comprehensive HR Services</a></li>
+                                <li><a class="dropdown-item" href="integrated.html">Integrated Facility Management
+                                        Services</a></li>
+                                <li><a class="dropdown-item" href="background.html">Background Verification</a></li>
 
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle rounded px-2" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false"
-                                style="color: #FF0000; font-weight: 600;">
-                                Product
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item " id="blinkButton" href="./jkfixit.html">JK-FIX-IT</a>
-                                </li>
-                                <!-- Add more items here if needed -->
+                                <li><a class="dropdown-item" href="eventmanagement.html">Event Management</a></li>
+                                <li><a class="dropdown-item" href="training.html">Training and Development</a>
+                                <!-- <li><a class="dropdown-item" href="otherservices.html">Other Services</a></li> -->
                             </ul>
                         </li>
-
-
-                        <!--                         
-                        <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/pricing.html" id="navbarDropdownServices" role="button">
-                                Pricing
-                            </a>
-                        </li>
-                         -->
-
-
+                     
+            <li class="nav-item">
+                <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                  class="nav-link rounded px-2" href="./jkfixit.html">JK-FIX-IT</a>
+              </li>
+                        
                         <!-- <li class="nav-item dropdown">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link dropdown-toggle" href="#"
                                 id="navbarDropdownSectors" role="button">
@@ -189,12 +160,20 @@
                         </style>
 
 
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="/pricing.html" id="navbarDropdownServices" role="button">
+                                Pricing
+                            </a>
+                        </li>
+                        
 
+                        <li class="nav-item">
+                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job
+                                Seekers*</a>
+                        </li>
                         <!-- <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="jobseekers.html">Job Seekers*</a>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;" class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
+                            <a id="blinkButton" style="color: white; background-color: red; font-weight: 600;"
+                                class="nav-link rounded px-2" href="book.html">Book Your Service*</a>
                         </li> -->
 
                         <script>
@@ -214,23 +193,19 @@
                             });
                         </script>
 
-
-
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" style="color: #FF0000; font-weight: 600;"
-                                id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#"  style="color: #FF0000; font-weight: 600;" id="careersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Careers
                             </a>
                             <ul class="dropdown-menu dropdown-menu-hover" aria-labelledby="careersDropdown">
-                                <li><a class="dropdown-item" href="/jobseekers.html">Careers</a></li>
-                                <!-- <li><a class="dropdown-item" href="/referralprogram.html">Referral Program</a></li> -->
+                                <li><a class="dropdown-item"   href="/career.html">Careers</a></li>
+                                <li><a class="dropdown-item" href="/">Referral Program</a></li>
                             </ul>
                         </li>
 
-
-
                         <!-- <li class="nav-item">
-                            <a style="color: #FF0000; font-weight: 600;" class="nav-link" href="clients.html">Clients</a>
+                            <a style="color: #ff0000; font-weight: 600;" class="nav-link"
+                                href="clients.html">Clients</a>
                         </li> -->
                         <li class="nav-item">
                             <a style="color: #FF0000; font-weight: 600;" class="nav-link"
@@ -290,6 +265,13 @@
         </head>
 
         <body>
+
+
+
+
+
+
+
     </header>
     <main>
 
@@ -403,7 +385,6 @@
         <!-- temp email id:litanak563@craftapk.com
               password:jai@**** -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-        
         <main class="container mt-5">
             <form action="" id="myForm">
                 <div class="container my-5">
@@ -466,15 +447,11 @@
                                 <select id="mainService" class="py-3 col-6 rounded bord outline-none"
                                     style="border: 2px solid #FF0000; background-color: white; color: black;">
                                     <option value="" selected disabled>Select Service Needs*</option>
-                                    <option value="Comprehensive HR Service">Contract Staffing and Placement</option>
-                                    <option value="Integrated Facility Management Service">Contract-to-Hire </option>
+                                    <option value="Comprehensive HR Service">Comprehensive HR Service</option>
+                                    <option value="Integrated Facility Management Service">Integrated Facility
+                                        Management Service</option>
                                     <!-- <option value="Event Management">Event Management</option> -->
-                                    <option value="Background Verification">Permanent Staffing </option>
-
-                                    <option value="Background Verification"> Supplier Rationalization </option>
-
-                                    <option value="Background Verification">Hire, Train & Deploy </option>
-
+                                    <option value="Background Verification">Background Verification</option>
                                 </select>
 
                                 <!-- Dropdown for Sub Service Selection -->
@@ -525,9 +502,6 @@
                         color: black;
                     }
                 </style>
-
-                
-
                 <script>
                     const mainServiceDropdown = document.getElementById("mainService");
                     const subServiceDropdown = document.getElementById("subService");
@@ -578,7 +552,6 @@
                         }
                     });
                 </script>
-
             </form>
 
             <!-- Toast Notification Container -->
@@ -818,7 +791,7 @@
                     </div>
                     <div class="col-md-4 text-center ">
                         <img src="./images/footer-custom-logo.png" alt="JK Talent Solutions Logo"
-                            class="img-fluid mb-3 bg-white rounded-1">
+                        class="img-fluid mb-3 bg-white rounded-1">
                         <div class="social-icons">
                             <a href="https://www.facebook.com/profile.php?id=61559849413983"><i
                                     class="fab fa-facebook-f"></i></a>
